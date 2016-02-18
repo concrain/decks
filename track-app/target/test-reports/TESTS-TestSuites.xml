@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="1" failures="1" hostname="russels-mac-pro" id="0" name="UserControllerTests" package="track" tests="2" time="2.107" timestamp="2014-06-15T02:05:43">
+      <properties />
+
+      <testcase classname="track.UserControllerTests" name="testAuthenticate" time="1.949">
+          <failure message="junit.framework.AssertionFailedError" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError
+	at track.UserControllerTests.testAuthenticate(UserControllerTests.groovy:89)
+</failure>
+
+      </testcase>
+
+      <testcase classname="track.UserControllerTests" name="testShow" time="0.138">
+          <error message="No signature of method: track.UserController.show() is applicable for argument types: () values: []&#xa;Possible solutions: wait(), any(), find(), dump(), grep(), wait(long)" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: track.UserController.show() is applicable for argument types: () values: []
+Possible solutions: wait(), any(), find(), dump(), grep(), wait(long)
+	at track.UserControllerTests.testShow(UserControllerTests.groovy:77)
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testAuthenticate--
+user= jdoe password= password
+--Output from testShow--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testAuthenticate--
+--Output from testShow--
+]]></system-err>
+
+  </testsuite>
+</testsuites>
