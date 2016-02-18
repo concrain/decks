@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QUCR_IN200101UV01 ITSVersion="XML_1.0" xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+	<id root="2.16.840.1.113883.1.3" extension=""/>
+	<creationTime value=""/>
+	<versionCode  controlInformationRoot="2.16.840.1.113883.11.19373" code="V3PR1"/>
+	<interactionId root="2.16.840.1.113883.1.6" extension="QUCR_IN200101UV01"/>
+	<profileId controlInformationRoot="2.16.840.1.113883.9" controlInformationExtension="Elig Query Request, Gen"/>
+	<processingCode code="D"/>
+	<processingModeCode code="T"/>
+	<acceptAckCode code="NE"/>
+	<receiver typeCode="RCV">
+		<device classCode="DEV" determinerCode="INSTANCE">
+			<id controlInformationRoot="2.16.840.1.113883.3.40.5.1" controlInformationExtension="Organization"/>
+			<asAgent classCode="AGNT">
+				<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+					<id controlInformationRoot="2.16.840.1.113883.3.51.200" controlInformationExtension="EligibilityServiceOrganization"/>
+				</representedOrganization>
+			</asAgent>
+		</device>
+	</receiver>
+	<sender typeCode="SND">
+		<device classCode="DEV" determinerCode="INSTANCE">
+			<id controlInformationRoot="2.16.840.1.113883.3.40.5.2" controlInformationExtension="Organization"/>
+			<asAgent classCode="AGNT">
+				<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+					<id controlInformationRoot="2.16.840.1.113883.3.51.200" controlInformationExtension="SenderOrganization"/>
+				</representedOrganization>
+			</asAgent>
+		</device>
+	</sender>
+	<controlActProcess classCode="CACT" moodCode="EVN">	
+		<code code="QUCR_TE200101UV01" codeSystem="2.16.840.1.113883.11.19427"/>
+		<authorOrPerformer typeCode="AUT">
+			<time validTimeHigh=""/>
+			<assignedPerson classCode="ASSIGNED">
+				<id controlInformationRoot="2.16.840.1.113883.3.51.1.1.7" controlInformationExtension=""/>
+				<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+					<id controlInformationRoot="22.16.840.1.113883.3.51.200" controlInformationExtension="Organization"/>
+				</representedOrganization>								
+			</assignedPerson>
+		</authorOrPerformer>
+		<queryByParameter>			
+			<statusCode code="new"/>
+			<parameterList>
+				<id extension=""/>
+				<carrierRole.id>
+					<value nullFlavor="NI"/>
+				</carrierRole.id>
+				<coveredPartyAsPatient.Id>
+					<value root="2.16.840.1.113883.3.51.1.1.6.1" extension=""/>
+				</coveredPartyAsPatient.Id>
+				<coveredPartyAsPatientPerson.BirthTime >
+					<value value=""/>
+				</coveredPartyAsPatientPerson.BirthTime>
+				<coveredPartyAsPatientPerson.Name>
+					<value>
+						<part type="FAM" value=""/>
+						<part type="GIV" value=""/>
+						<part type="GIV" value="" qualifier="MID"/>
+					</value>
+				</coveredPartyAsPatientPerson.Name>
+				<policyOrAccount.Id>
+					<value root="2.16.840.1.113883.3.51.1.1.6" extension=""/>
+				</policyOrAccount.Id>
+				<serviceDate>
+					<value validTimeHigh=""/>
+				</serviceDate> 
+			</parameterList>
+		</queryByParameter>
+	</controlActProcess>
+</QUCR_IN200101UV01>

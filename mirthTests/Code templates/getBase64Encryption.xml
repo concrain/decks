@@ -1,0 +1,22 @@
+<list>
+  <codeTemplate version="3.0.0">
+    <id>55844dce-d399-4ddd-8ea1-9fbbea6c2598</id>
+    <name>getBase64Encrypted</name>
+    <tooltip>Encode the byte array using Base64 encoding shceme</tooltip>
+    <code>// extract the inbound message and encode it to Base64
+
+function getBase64Encrypted(strMessage) {
+	
+	try{
+		var msgByte = new Package.java.lang.String(strMessage).getBytes();
+		return FileUtil.encode(msgByte);
+	
+	}catch(err){
+		logger.error(err);
+		throw err;	
+	}
+}</code>
+    <type>FUNCTION</type>
+    <scope>2</scope>
+  </codeTemplate>
+</list>

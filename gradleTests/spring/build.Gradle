@@ -1,0 +1,60 @@
+buildscript {
+    ext {
+        springBootVersion = '1.2.5.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}") 
+        classpath("io.spring.gradle:dependency-management-plugin:0.5.1.RELEASE")
+    }
+}
+
+apply plugin: 'groovy'
+apply plugin: 'idea'
+apply plugin: 'spring-boot' 
+apply plugin: 'io.spring.dependency-management' 
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-security")
+    compile("org.springframework.boot:spring-boot-starter-web")
+    //compile("org.codehaus.groovy:groovy")
+    compile 'org.codehaus.groovy:groovy-all:2.4.3'											
+    testCompile("org.springframework.boot:spring-boot-starter-test") 
+}
+
+sourceSets {												
+	main.groovy.srcDir('src/main/groovy')	
+	test.groovy.srcDir('src/test/groovy')
+}
+jar {
+    baseName = 'irx-portal'
+    version = '0.1.0-SNAPSHOT'
+    manifest.attributes('Main-Class':'com.app.IrxPortalApplication')
+
+	from configurations.compile.collect { zipTree it } 
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
+
+task runJar (group: 'run app', type: Exec, dependsOn: jar, description: 'run application from jar') {
+	
+	  // configuration phase
+	executable 'java'
+
+	  // execution phase
+    args '-jar', "$jar.archivePath"		
+}
+
+

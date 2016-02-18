@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-Title: Spring Boot Security Starter
+Implementation-Version: 1.2.5.RELEASE
+Implementation-Vendor-Id: org.springframework.boot
+Built-By: bamboo
+Build-Jdk: 1.7.0_67
+Specification-Vendor: Pivotal Software, Inc.
+Specification-Title: Spring Boot Security Starter
+Created-By: Apache Maven 3.0.5
+Specification-Version: 1.2.5.RELEASE
+Archiver-Version: Plexus Archiver
+

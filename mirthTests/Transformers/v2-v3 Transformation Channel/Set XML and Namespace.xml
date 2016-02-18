@@ -1,0 +1,482 @@
+<transformer version="3.0.0">
+  <steps>
+    <step>
+      <sequenceNumber>0</sequenceNumber>
+      <name>Message ID</name>
+      <script>tmp[&apos;id&apos;][&apos;@extension&apos;] = validate(msg[&apos;MSH&apos;][&apos;MSH.10&apos;][&apos;MSH.10.1&apos;].toString(), &apos;&apos;, new Array());</script>
+      <type>Message Builder</type>
+      <data class="map">
+        <entry>
+          <string>Variable</string>
+          <string>tmp[&apos;id&apos;][&apos;@extension&apos;]</string>
+        </entry>
+        <entry>
+          <string>DefaultValue</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>RegularExpressions</string>
+          <list/>
+        </entry>
+        <entry>
+          <string>Mapping</string>
+          <string>msg[&apos;MSH&apos;][&apos;MSH.10&apos;][&apos;MSH.10.1&apos;].toString()</string>
+        </entry>
+      </data>
+    </step>
+    <step>
+      <sequenceNumber>1</sequenceNumber>
+      <name>Creation Time</name>
+      <script>tmp[&apos;creationTime&apos;][&apos;@value&apos;] = validate(msg[&apos;MSH&apos;][&apos;MSH.7&apos;][&apos;MSH.7.1&apos;].toString(), &apos;&apos;, new Array());</script>
+      <type>Message Builder</type>
+      <data class="map">
+        <entry>
+          <string>Variable</string>
+          <string>tmp[&apos;creationTime&apos;][&apos;@value&apos;]</string>
+        </entry>
+        <entry>
+          <string>DefaultValue</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>RegularExpressions</string>
+          <list/>
+        </entry>
+        <entry>
+          <string>Mapping</string>
+          <string>msg[&apos;MSH&apos;][&apos;MSH.7&apos;][&apos;MSH.7.1&apos;].toString()</string>
+        </entry>
+      </data>
+    </step>
+    <step>
+      <sequenceNumber>2</sequenceNumber>
+      <name>Receiving Organization ID</name>
+      <script>tmp[&apos;receiver&apos;][&apos;device&apos;][&apos;id&apos;][&apos;@controlInformationExtension&apos;] = validate(msg[&apos;HDR&apos;][&apos;HDR.2&apos;][&apos;HDR.2.3&apos;].toString(), &apos;&apos;, new Array());</script>
+      <type>Message Builder</type>
+      <data class="map">
+        <entry>
+          <string>Variable</string>
+          <string>tmp[&apos;receiver&apos;][&apos;device&apos;][&apos;id&apos;][&apos;@controlInformationExtension&apos;]</string>
+        </entry>
+        <entry>
+          <string>DefaultValue</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>RegularExpressions</string>
+          <list/>
+        </entry>
+        <entry>
+          <string>Mapping</string>
+          <string>msg[&apos;HDR&apos;][&apos;HDR.2&apos;][&apos;HDR.2.3&apos;].toString()</string>
+        </entry>
+      </data>
+    </step>
+    <step>
+      <sequenceNumber>3</sequenceNumber>
+      <name>Receiving Organization Name</name>
+      <script>tmp[&apos;receiver&apos;][&apos;device&apos;][&apos;asAgent&apos;][&apos;representedOrganization&apos;][&apos;id&apos;][&apos;@controlInformationExtension&apos;] = validate(msg[&apos;HDR&apos;][&apos;HDR.2&apos;][&apos;HDR.2.1&apos;].toString(), &apos;&apos;, new Array());</script>
+      <type>Message Builder</type>
+      <data class="map">
+        <entry>
+          <string>DefaultValue</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>Mapping</string>
+          <string>msg[&apos;HDR&apos;][&apos;HDR.2&apos;][&apos;HDR.2.1&apos;].toString()</string>
+        </entry>
+        <entry>
+          <string>RegularExpressions</string>
+          <list/>
+        </entry>
+        <entry>
+          <string>Variable</string>
+          <string>tmp[&apos;receiver&apos;][&apos;device&apos;][&apos;asAgent&apos;][&apos;representedOrganization&apos;][&apos;id&apos;][&apos;@controlInformationExtension&apos;]</string>
+        </entry>
+      </data>
+    </step>
+    <step>
+      <sequenceNumber>4</sequenceNumber>
+      <name>Sending Origanization ID</name>
+      <script>tmp[&apos;sender&apos;][&apos;device&apos;][&apos;id&apos;][&apos;@controlInformationExtension&apos;] = validate(msg[&apos;HDR&apos;][&apos;HDR.1&apos;][&apos;HDR.1.3&apos;].toString(), &apos;&apos;, new Array());</script>
+      <type>Message Builder</type>
+      <data class="map">
+        <entry>
+          <string>DefaultValue</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>Mapping</string>
+          <string>msg[&apos;HDR&apos;][&apos;HDR.1&apos;][&apos;HDR.1.3&apos;].toString()</string>
+        </entry>
+        <entry>
+          <string>RegularExpressions</string>
+          <list/>
+        </entry>
+        <entry>
+          <string>Variable</string>
+          <string>tmp[&apos;sender&apos;][&apos;device&apos;][&apos;id&apos;][&apos;@controlInformationExtension&apos;]</string>
+        </entry>
+      </data>
+    </step>
+    <step>
+      <sequenceNumber>5</sequenceNumber>
+      <name>Sending Organization Name</name>
+      <script>tmp[&apos;sender&apos;][&apos;device&apos;][&apos;asAgent&apos;][&apos;representedOrganization&apos;][&apos;id&apos;][&apos;@controlInformationExtension&apos;] = validate(msg[&apos;HDR&apos;][&apos;HDR.1&apos;][&apos;HDR.1.1&apos;].toString(), &apos;&apos;, new Array());</script>
+      <type>Message Builder</type>
+      <data class="map">
+        <entry>
+          <string>DefaultValue</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>Mapping</string>
+          <string>msg[&apos;HDR&apos;][&apos;HDR.1&apos;][&apos;HDR.1.1&apos;].toString()</string>
+        </entry>
+        <entry>
+          <string>RegularExpressions</string>
+          <list/>
+        </entry>
+        <entry>
+          <string>Variable</string>
+          <string>tmp[&apos;sender&apos;][&apos;device&apos;][&apos;asAgent&apos;][&apos;representedOrganization&apos;][&apos;id&apos;][&apos;@controlInformationExtension&apos;]</string>
+        </entry>
+      </data>
+    </step>
+    <step>
+      <sequenceNumber>6</sequenceNumber>
+      <name>Query Performer</name>
+      <script>tmp[&apos;controlActProcess&apos;][&apos;authorOrPerformer&apos;][&apos;assignedPerson&apos;][&apos;id&apos;][&apos;@controlInformationExtension&apos;] = validate(msg[&apos;SEC&apos;][&apos;SEC.5&apos;][&apos;SEC.5.1&apos;].toString(), &apos;&apos;, new Array());</script>
+      <type>Message Builder</type>
+      <data class="map">
+        <entry>
+          <string>DefaultValue</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>Mapping</string>
+          <string>msg[&apos;SEC&apos;][&apos;SEC.5&apos;][&apos;SEC.5.1&apos;].toString()</string>
+        </entry>
+        <entry>
+          <string>RegularExpressions</string>
+          <list/>
+        </entry>
+        <entry>
+          <string>Variable</string>
+          <string>tmp[&apos;controlActProcess&apos;][&apos;authorOrPerformer&apos;][&apos;assignedPerson&apos;][&apos;id&apos;][&apos;@controlInformationExtension&apos;]</string>
+        </entry>
+      </data>
+    </step>
+    <step>
+      <sequenceNumber>7</sequenceNumber>
+      <name>Query Performer Organization</name>
+      <script>tmp[&apos;controlActProcess&apos;][&apos;authorOrPerformer&apos;][&apos;assignedPerson&apos;][&apos;representedOrganization&apos;][&apos;id&apos;][&apos;@controlInformationExtension&apos;] = validate(msg[&apos;SEC&apos;][&apos;SEC.1&apos;][&apos;SEC.1.1&apos;].toString(), &apos;&apos;, new Array());</script>
+      <type>Message Builder</type>
+      <data class="map">
+        <entry>
+          <string>DefaultValue</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>Mapping</string>
+          <string>msg[&apos;SEC&apos;][&apos;SEC.1&apos;][&apos;SEC.1.1&apos;].toString()</string>
+        </entry>
+        <entry>
+          <string>RegularExpressions</string>
+          <list/>
+        </entry>
+        <entry>
+          <string>Variable</string>
+          <string>tmp[&apos;controlActProcess&apos;][&apos;authorOrPerformer&apos;][&apos;assignedPerson&apos;][&apos;representedOrganization&apos;][&apos;id&apos;][&apos;@controlInformationExtension&apos;]</string>
+        </entry>
+      </data>
+    </step>
+    <step>
+      <sequenceNumber>8</sequenceNumber>
+      <name>Query ID</name>
+      <script>tmp[&apos;controlActProcess&apos;][&apos;queryByParameter&apos;][&apos;parameterList&apos;][&apos;id&apos;][&apos;@extension&apos;] = validate(msg[&apos;QPD&apos;][&apos;QPD.2&apos;][&apos;QPD.2.1&apos;].toString(), &apos;&apos;, new Array());</script>
+      <type>Message Builder</type>
+      <data class="map">
+        <entry>
+          <string>DefaultValue</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>Mapping</string>
+          <string>msg[&apos;QPD&apos;][&apos;QPD.2&apos;][&apos;QPD.2.1&apos;].toString()</string>
+        </entry>
+        <entry>
+          <string>RegularExpressions</string>
+          <list/>
+        </entry>
+        <entry>
+          <string>Variable</string>
+          <string>tmp[&apos;controlActProcess&apos;][&apos;queryByParameter&apos;][&apos;parameterList&apos;][&apos;id&apos;][&apos;@extension&apos;]</string>
+        </entry>
+      </data>
+    </step>
+    <step>
+      <sequenceNumber>9</sequenceNumber>
+      <name>Patient ID</name>
+      <script>tmp[&apos;controlActProcess&apos;][&apos;queryByParameter&apos;][&apos;parameterList&apos;][&apos;coveredPartyAsPatient.Id&apos;][&apos;value&apos;][&apos;@extension&apos;] = validate(msg[&apos;QPD&apos;][&apos;QPD.7&apos;][&apos;QPD.7.1&apos;].toString(), &apos;&apos;, new Array());</script>
+      <type>Message Builder</type>
+      <data class="map">
+        <entry>
+          <string>DefaultValue</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>Mapping</string>
+          <string>msg[&apos;QPD&apos;][&apos;QPD.7&apos;][&apos;QPD.7.1&apos;].toString()</string>
+        </entry>
+        <entry>
+          <string>RegularExpressions</string>
+          <list/>
+        </entry>
+        <entry>
+          <string>Variable</string>
+          <string>tmp[&apos;controlActProcess&apos;][&apos;queryByParameter&apos;][&apos;parameterList&apos;][&apos;coveredPartyAsPatient.Id&apos;][&apos;value&apos;][&apos;@extension&apos;]</string>
+        </entry>
+      </data>
+    </step>
+    <step>
+      <sequenceNumber>10</sequenceNumber>
+      <name>Patient Birthday</name>
+      <script>tmp[&apos;controlActProcess&apos;][&apos;queryByParameter&apos;][&apos;parameterList&apos;][&apos;coveredPartyAsPatientPerson.BirthTime&apos;][&apos;value&apos;][&apos;@value&apos;] = validate(msg[&apos;QPD&apos;][&apos;QPD.9&apos;][&apos;QPD.9.1&apos;].toString(), &apos;&apos;, new Array());</script>
+      <type>Message Builder</type>
+      <data class="map">
+        <entry>
+          <string>DefaultValue</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>Mapping</string>
+          <string>msg[&apos;QPD&apos;][&apos;QPD.9&apos;][&apos;QPD.9.1&apos;].toString()</string>
+        </entry>
+        <entry>
+          <string>RegularExpressions</string>
+          <list/>
+        </entry>
+        <entry>
+          <string>Variable</string>
+          <string>tmp[&apos;controlActProcess&apos;][&apos;queryByParameter&apos;][&apos;parameterList&apos;][&apos;coveredPartyAsPatientPerson.BirthTime&apos;][&apos;value&apos;][&apos;@value&apos;]</string>
+        </entry>
+      </data>
+    </step>
+    <step>
+      <sequenceNumber>11</sequenceNumber>
+      <name>Patient Name</name>
+      <script>// Patient Name 
+&#xd;var familyName = msg[&apos;QPD&apos;][&apos;QPD.8&apos;][&apos;QPD.8.1&apos;].toString(); 
+var givenName = msg[&apos;QPD&apos;][&apos;QPD.8&apos;][&apos;QPD.8.2&apos;].toString(); 
+var middleName = msg[&apos;QPD&apos;][&apos;QPD.8&apos;][&apos;QPD.8.3&apos;].toString();&#xd;
+
+tmp[&apos;controlActProcess&apos;][&apos;queryByParameter&apos;][&apos;parameterList&apos;][&apos;coveredPartyAsPatientPerson.Name&apos;][&apos;value&apos;][&apos;part &apos;][0][&apos;@value&apos;] = familyName; 
+tmp[&apos;controlActProcess&apos;][&apos;queryByParameter&apos;][&apos;parameterList&apos;][&apos;coveredPartyAsPatientPerson.Name&apos;][&apos;value&apos;][&apos;part &apos;][1][&apos;@value&apos;] = givenName; 
+tmp[&apos;controlActProcess&apos;][&apos;queryByParameter&apos;][&apos;parameterList&apos;][&apos;coveredPartyAsPatientPerson.Name&apos;][&apos;value&apos;][&apos;part &apos;][2][&apos;@value&apos;] = middleName;</script>
+      <type>JavaScript</type>
+      <data class="map">
+        <entry>
+          <string>Script</string>
+          <string>// Patient Name 
+&#xd;var familyName = msg[&apos;QPD&apos;][&apos;QPD.8&apos;][&apos;QPD.8.1&apos;].toString(); 
+var givenName = msg[&apos;QPD&apos;][&apos;QPD.8&apos;][&apos;QPD.8.2&apos;].toString(); 
+var middleName = msg[&apos;QPD&apos;][&apos;QPD.8&apos;][&apos;QPD.8.3&apos;].toString();&#xd;
+
+tmp[&apos;controlActProcess&apos;][&apos;queryByParameter&apos;][&apos;parameterList&apos;][&apos;coveredPartyAsPatientPerson.Name&apos;][&apos;value&apos;][&apos;part &apos;][0][&apos;@value&apos;] = familyName; 
+tmp[&apos;controlActProcess&apos;][&apos;queryByParameter&apos;][&apos;parameterList&apos;][&apos;coveredPartyAsPatientPerson.Name&apos;][&apos;value&apos;][&apos;part &apos;][1][&apos;@value&apos;] = givenName; 
+tmp[&apos;controlActProcess&apos;][&apos;queryByParameter&apos;][&apos;parameterList&apos;][&apos;coveredPartyAsPatientPerson.Name&apos;][&apos;value&apos;][&apos;part &apos;][2][&apos;@value&apos;] = middleName;</string>
+        </entry>
+      </data>
+    </step>
+    <step>
+      <sequenceNumber>12</sequenceNumber>
+      <name>Eligibility Plan Type</name>
+      <script>tmp[&apos;controlActProcess&apos;][&apos;queryByParameter&apos;][&apos;parameterList&apos;][&apos;policyOrAccount.Id&apos;][&apos;value&apos;][&apos;@extension&apos;] = validate(msg[&apos;QPD&apos;][&apos;QPD.11&apos;][&apos;QPD.11.1&apos;].toString(), &apos;&apos;, new Array());</script>
+      <type>Message Builder</type>
+      <data class="map">
+        <entry>
+          <string>DefaultValue</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>Mapping</string>
+          <string>msg[&apos;QPD&apos;][&apos;QPD.11&apos;][&apos;QPD.11.1&apos;].toString()</string>
+        </entry>
+        <entry>
+          <string>RegularExpressions</string>
+          <list/>
+        </entry>
+        <entry>
+          <string>Variable</string>
+          <string>tmp[&apos;controlActProcess&apos;][&apos;queryByParameter&apos;][&apos;parameterList&apos;][&apos;policyOrAccount.Id&apos;][&apos;value&apos;][&apos;@extension&apos;]</string>
+        </entry>
+      </data>
+    </step>
+    <step>
+      <sequenceNumber>13</sequenceNumber>
+      <name>Set Service Date</name>
+      <script>tmp[&apos;controlActProcess&apos;][&apos;queryByParameter&apos;][&apos;parameterList&apos;][&apos;serviceDate&apos;][&apos;value&apos;][&apos;@validTimeHigh&apos;] = validate(msg[&apos;QPD&apos;][&apos;QPD.7&apos;][&apos;QPD.7.1&apos;].toString(), &apos;&apos;, new Array());</script>
+      <type>Message Builder</type>
+      <data class="map">
+        <entry>
+          <string>DefaultValue</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>Mapping</string>
+          <string>msg[&apos;QPD&apos;][&apos;QPD.7&apos;][&apos;QPD.7.1&apos;].toString()</string>
+        </entry>
+        <entry>
+          <string>RegularExpressions</string>
+          <list/>
+        </entry>
+        <entry>
+          <string>Variable</string>
+          <string>tmp[&apos;controlActProcess&apos;][&apos;queryByParameter&apos;][&apos;parameterList&apos;][&apos;serviceDate&apos;][&apos;value&apos;][&apos;@validTimeHigh&apos;]</string>
+        </entry>
+      </data>
+    </step>
+    <step>
+      <sequenceNumber>14</sequenceNumber>
+      <name>INTENTIONALLY MALFORMED DATA - TESTING ONLY</name>
+      <script>// TESTING ONLY
+
+if ( &apos;v3error&apos; == msg[&apos;QPD&apos;][&apos;QPD.8&apos;][&apos;QPD.8.2&apos;].toString() ) { 
+	if ( Math.floor((Math.random()*10)+1) &gt;5 ) {&#xd;		tmp[&apos;creationTime&apos;][&apos;@value&apos;] = &apos;20130101&apos;; 
+	} else {
+		tmp[&apos;id&apos;][&apos;@root&apos;] = &apos;2.16.840.1&apos;;&#xd;	} 
+}</script>
+      <type>JavaScript</type>
+      <data class="map">
+        <entry>
+          <string>Script</string>
+          <string>// TESTING ONLY
+
+if ( &apos;v3error&apos; == msg[&apos;QPD&apos;][&apos;QPD.8&apos;][&apos;QPD.8.2&apos;].toString() ) { 
+	if ( Math.floor((Math.random()*10)+1) &gt;5 ) {&#xd;		tmp[&apos;creationTime&apos;][&apos;@value&apos;] = &apos;20130101&apos;; 
+	} else {
+		tmp[&apos;id&apos;][&apos;@root&apos;] = &apos;2.16.840.1&apos;;&#xd;	} 
+}</string>
+        </entry>
+      </data>
+    </step>
+    <step>
+      <sequenceNumber>15</sequenceNumber>
+      <name>Set XML Version and Namespace</name>
+      <script>// Set XML Version and Namespace
+
+tmp = &apos;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&apos; + tmp;&#xd;tmp = tmp.replace(&apos;QUCR_IN200101UV01 ITSVersion=&quot;XML_1.0&quot;&apos;, 
+&apos;QUCR_IN200101UV01 ITSVersion=&quot;XML_1.0&quot; xmlns=&quot;urn:hl7-org:v3&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema- instance&quot;&apos;);</script>
+      <type>JavaScript</type>
+      <data class="map">
+        <entry>
+          <string>Script</string>
+          <string>// Set XML Version and Namespace
+
+tmp = &apos;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&apos; + tmp;&#xd;tmp = tmp.replace(&apos;QUCR_IN200101UV01 ITSVersion=&quot;XML_1.0&quot;&apos;, 
+&apos;QUCR_IN200101UV01 ITSVersion=&quot;XML_1.0&quot; xmlns=&quot;urn:hl7-org:v3&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema- instance&quot;&apos;);</string>
+        </entry>
+      </data>
+    </step>
+  </steps>
+  <inboundTemplate encoding="base64">TVNIfF5+XCZ8QURNfHxBTEx8fDIwMDB8fFFCUF5FNDV8MTIzNDV8RHwyLjR8fHxBTHxBTA1IRFJ8
+U2VuZGVyXlFSXjQ0NV5eXl5efFJlY2VpdmVyXlFSXjQ0NV5eXl5efFBIDVNFQ3x8fHx8VXNlcklk
+QE9yZ2FuaXphdGlvbi5jb20NUVBEfEU0NV5FbGlnaWJpbGl0eSBRdWVyeV5DSUhJMDAwM3w1NDMy
+MXx8fHx8MTIzXl5eSVNPXlBITnxFdmVyeXdvbWFuXk1hcnleUGF0cmlja15eXl5MXnwxOTY4MDEy
+MHx8TVNQXnx8fHxFWFQgClJDUHxJ</inboundTemplate>
+  <outboundTemplate encoding="base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxRVUNSX0lOMjAwMTAxVVYw
+MSBJVFNWZXJzaW9uPSJYTUxfMS4wIiB4bWxucz0idXJuOmhsNy1vcmc6djMiIHhtbG5zOnhzaT0i
+aHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiPiANCgk8aWQgcm9vdD0i
+Mi4xNi44NDAuMS4xMTM4ODMuMS4zIiBleHRlbnNpb249IiIvPg0KCTxjcmVhdGlvblRpbWUgdmFs
+dWU9IiIvPg0KCTx2ZXJzaW9uQ29kZSAgY29udHJvbEluZm9ybWF0aW9uUm9vdD0iMi4xNi44NDAu
+MS4xMTM4ODMuMTEuMTkzNzMiIGNvZGU9IlYzUFIxIi8+DQoJPGludGVyYWN0aW9uSWQgcm9vdD0i
+Mi4xNi44NDAuMS4xMTM4ODMuMS42IiBleHRlbnNpb249IlFVQ1JfSU4yMDAxMDFVVjAxIi8+DQoJ
+PHByb2ZpbGVJZCBjb250cm9sSW5mb3JtYXRpb25Sb290PSIyLjE2Ljg0MC4xLjExMzg4My45IiBj
+b250cm9sSW5mb3JtYXRpb25FeHRlbnNpb249IkVsaWcgUXVlcnkgUmVxdWVzdCwgR2VuIi8+DQoJ
+PHByb2Nlc3NpbmdDb2RlIGNvZGU9IkQiLz4NCgk8cHJvY2Vzc2luZ01vZGVDb2RlIGNvZGU9IlQi
+Lz4NCgk8YWNjZXB0QWNrQ29kZSBjb2RlPSJORSIvPg0KCTxyZWNlaXZlciB0eXBlQ29kZT0iUkNW
+Ij4NCgkJPGRldmljZSBjbGFzc0NvZGU9IkRFViIgZGV0ZXJtaW5lckNvZGU9IklOU1RBTkNFIj4N
+CgkJCTxpZCBjb250cm9sSW5mb3JtYXRpb25Sb290PSIyLjE2Ljg0MC4xLjExMzg4My4zLjQwLjUu
+MSIgY29udHJvbEluZm9ybWF0aW9uRXh0ZW5zaW9uPSJPcmdhbml6YXRpb24iLz4NCgkJCTxhc0Fn
+ZW50IGNsYXNzQ29kZT0iQUdOVCI+DQoJCQkJPHJlcHJlc2VudGVkT3JnYW5pemF0aW9uIGNsYXNz
+Q29kZT0iT1JHIiBkZXRlcm1pbmVyQ29kZT0iSU5TVEFOQ0UiPg0KCQkJCQk8aWQgY29udHJvbElu
+Zm9ybWF0aW9uUm9vdD0iMi4xNi44NDAuMS4xMTM4ODMuMy41MS4yMDAiIGNvbnRyb2xJbmZvcm1h
+dGlvbkV4dGVuc2lvbj0iRWxpZ2liaWxpdHlTZXJ2aWNlT3JnYW5pemF0aW9uIi8+DQoJCQkJPC9y
+ZXByZXNlbnRlZE9yZ2FuaXphdGlvbj4NCgkJCTwvYXNBZ2VudD4NCgkJPC9kZXZpY2U+DQoJPC9y
+ZWNlaXZlcj4NCgk8c2VuZGVyIHR5cGVDb2RlPSJTTkQiPg0KCQk8ZGV2aWNlIGNsYXNzQ29kZT0i
+REVWIiBkZXRlcm1pbmVyQ29kZT0iSU5TVEFOQ0UiPg0KCQkJPGlkIGNvbnRyb2xJbmZvcm1hdGlv
+blJvb3Q9IjIuMTYuODQwLjEuMTEzODgzLjMuNDAuNS4yIiBjb250cm9sSW5mb3JtYXRpb25FeHRl
+bnNpb249Ik9yZ2FuaXphdGlvbiIvPg0KCQkJPGFzQWdlbnQgY2xhc3NDb2RlPSJBR05UIj4NCgkJ
+CQk8cmVwcmVzZW50ZWRPcmdhbml6YXRpb24gY2xhc3NDb2RlPSJPUkciIGRldGVybWluZXJDb2Rl
+PSJJTlNUQU5DRSI+DQoJCQkJCTxpZCBjb250cm9sSW5mb3JtYXRpb25Sb290PSIyLjE2Ljg0MC4x
+LjExMzg4My4zLjUxLjIwMCIgY29udHJvbEluZm9ybWF0aW9uRXh0ZW5zaW9uPSJTZW5kZXJPcmdh
+bml6YXRpb24iLz4NCgkJCQk8L3JlcHJlc2VudGVkT3JnYW5pemF0aW9uPg0KCQkJPC9hc0FnZW50
+Pg0KCQk8L2RldmljZT4NCgk8L3NlbmRlcj4NCgk8Y29udHJvbEFjdFByb2Nlc3MgY2xhc3NDb2Rl
+PSJDQUNUIiBtb29kQ29kZT0iRVZOIj4JDQoJCTxjb2RlIGNvZGU9IlFVQ1JfVEUyMDAxMDFVVjAx
+IiBjb2RlU3lzdGVtPSIyLjE2Ljg0MC4xLjExMzg4My4xMS4xOTQyNyIvPg0KCQk8YXV0aG9yT3JQ
+ZXJmb3JtZXIgdHlwZUNvZGU9IkFVVCI+DQoJCQk8dGltZSB2YWxpZFRpbWVIaWdoPSIiLz4NCgkJ
+CTxhc3NpZ25lZFBlcnNvbiBjbGFzc0NvZGU9IkFTU0lHTkVEIj4NCgkJCQk8aWQgY29udHJvbElu
+Zm9ybWF0aW9uUm9vdD0iMi4xNi44NDAuMS4xMTM4ODMuMy41MS4xLjEuNyIgY29udHJvbEluZm9y
+bWF0aW9uRXh0ZW5zaW9uPSIiLz4NCgkJCQk8cmVwcmVzZW50ZWRPcmdhbml6YXRpb24gY2xhc3ND
+b2RlPSJPUkciIGRldGVybWluZXJDb2RlPSJJTlNUQU5DRSI+DQoJCQkJCTxpZCBjb250cm9sSW5m
+b3JtYXRpb25Sb290PSIyMi4xNi44NDAuMS4xMTM4ODMuMy41MS4yMDAiIGNvbnRyb2xJbmZvcm1h
+dGlvbkV4dGVuc2lvbj0iT3JnYW5pemF0aW9uIi8+DQoJCQkJPC9yZXByZXNlbnRlZE9yZ2FuaXph
+dGlvbj4JCQkJCQkJCQ0KCQkJPC9hc3NpZ25lZFBlcnNvbj4NCgkJPC9hdXRob3JPclBlcmZvcm1l
+cj4NCgkJPHF1ZXJ5QnlQYXJhbWV0ZXI+CQkJDQoJCQk8c3RhdHVzQ29kZSBjb2RlPSJuZXciLz4N
+CgkJCTxwYXJhbWV0ZXJMaXN0Pg0KCQkJCTxpZCBleHRlbnNpb249IiIvPg0KCQkJCTxjYXJyaWVy
+Um9sZS5pZD4NCgkJCQkJPHZhbHVlIG51bGxGbGF2b3I9Ik5JIi8+DQoJCQkJPC9jYXJyaWVyUm9s
+ZS5pZD4NCgkJCQk8Y292ZXJlZFBhcnR5QXNQYXRpZW50LklkPg0KCQkJCQk8dmFsdWUgcm9vdD0i
+Mi4xNi44NDAuMS4xMTM4ODMuMy41MS4xLjEuNi4xIiBleHRlbnNpb249IiIvPg0KCQkJCTwvY292
+ZXJlZFBhcnR5QXNQYXRpZW50LklkPg0KCQkJCTxjb3ZlcmVkUGFydHlBc1BhdGllbnRQZXJzb24u
+QmlydGhUaW1lID4NCgkJCQkJPHZhbHVlIHZhbHVlPSIiLz4NCgkJCQk8L2NvdmVyZWRQYXJ0eUFz
+UGF0aWVudFBlcnNvbi5CaXJ0aFRpbWU+DQoJCQkJPGNvdmVyZWRQYXJ0eUFzUGF0aWVudFBlcnNv
+bi5OYW1lPg0KCQkJCQk8dmFsdWU+DQoJCQkJCQk8cGFydCB0eXBlPSJGQU0iIHZhbHVlPSIiLz4N
+CgkJCQkJCTxwYXJ0IHR5cGU9IkdJViIgdmFsdWU9IiIvPg0KCQkJCQkJPHBhcnQgdHlwZT0iR0lW
+IiB2YWx1ZT0iIiBxdWFsaWZpZXI9Ik1JRCIvPg0KCQkJCQk8L3ZhbHVlPg0KCQkJCTwvY292ZXJl
+ZFBhcnR5QXNQYXRpZW50UGVyc29uLk5hbWU+DQoJCQkJPHBvbGljeU9yQWNjb3VudC5JZD4NCgkJ
+CQkJPHZhbHVlIHJvb3Q9IjIuMTYuODQwLjEuMTEzODgzLjMuNTEuMS4xLjYiIGV4dGVuc2lvbj0i
+Ii8+DQoJCQkJPC9wb2xpY3lPckFjY291bnQuSWQ+DQoJCQkJPHNlcnZpY2VEYXRlPg0KCQkJCQk8
+dmFsdWUgdmFsaWRUaW1lSGlnaD0iIi8+DQoJCQkJPC9zZXJ2aWNlRGF0ZT4gDQoJCQk8L3BhcmFt
+ZXRlckxpc3Q+DQoJCTwvcXVlcnlCeVBhcmFtZXRlcj4NCgk8L2NvbnRyb2xBY3RQcm9jZXNzPg0K
+PC9RVUNSX0lOMjAwMTAxVVYwMT4=</outboundTemplate>
+  <inboundDataType>HL7V2</inboundDataType>
+  <outboundDataType>XML</outboundDataType>
+  <inboundProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2DataTypeProperties" version="3.0.0">
+    <serializationProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2SerializationProperties" version="3.0.0">
+      <handleRepetitions>true</handleRepetitions>
+      <handleSubcomponents>true</handleSubcomponents>
+      <useStrictParser>false</useStrictParser>
+      <useStrictValidation>false</useStrictValidation>
+      <stripNamespaces>true</stripNamespaces>
+      <segmentDelimiter>\r</segmentDelimiter>
+      <convertLineBreaks>true</convertLineBreaks>
+    </serializationProperties>
+    <deserializationProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2DeserializationProperties" version="3.0.0">
+      <useStrictParser>false</useStrictParser>
+      <useStrictValidation>false</useStrictValidation>
+      <segmentDelimiter>\r</segmentDelimiter>
+    </deserializationProperties>
+    <responseGenerationProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2ResponseGenerationProperties" version="3.0.0">
+      <segmentDelimiter>\r</segmentDelimiter>
+      <successfulACKCode>AA</successfulACKCode>
+      <successfulACKMessage></successfulACKMessage>
+      <errorACKCode>AE</errorACKCode>
+      <errorACKMessage>An Error Occured Processing Message.</errorACKMessage>
+      <rejectedACKCode>AR</rejectedACKCode>
+      <rejectedACKMessage>Message Rejected.</rejectedACKMessage>
+      <msh15ACKAccept>false</msh15ACKAccept>
+    </responseGenerationProperties>
+    <responseValidationProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2ResponseValidationProperties" version="3.0.0">
+      <successfulACKCode>AA</successfulACKCode>
+      <errorACKCode>AE</errorACKCode>
+      <rejectedACKCode>AR</rejectedACKCode>
+    </responseValidationProperties>
+  </inboundProperties>
+  <outboundProperties class="com.mirth.connect.plugins.datatypes.xml.XMLDataTypeProperties" version="3.0.0">
+    <serializationProperties class="com.mirth.connect.plugins.datatypes.xml.XMLSerializationProperties" version="3.0.0">
+      <stripNamespaces>true</stripNamespaces>
+    </serializationProperties>
+  </outboundProperties>
+</transformer>

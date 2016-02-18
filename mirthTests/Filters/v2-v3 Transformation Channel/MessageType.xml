@@ -1,0 +1,109 @@
+<filter version="3.0.0">
+  <rules>
+    <rule>
+      <sequenceNumber>0</sequenceNumber>
+      <name>Accept message if &quot;msg[&apos;MSH&apos;][&apos;MSH.9&apos;][&apos;MSH.9.1&apos;].toString()&quot; equals &apos;QBP&apos;</name>
+      <data class="map">
+        <entry>
+          <string>Values</string>
+          <list>
+            <string>&apos;QBP&apos;</string>
+          </list>
+        </entry>
+        <entry>
+          <string>Name</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>Field</string>
+          <string>msg[&apos;MSH&apos;][&apos;MSH.9&apos;][&apos;MSH.9.1&apos;].toString()</string>
+        </entry>
+        <entry>
+          <string>OriginalField</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>Equals</string>
+          <string>1</string>
+        </entry>
+      </data>
+      <type>Rule Builder</type>
+      <script>if(msg[&apos;MSH&apos;][&apos;MSH.9&apos;][&apos;MSH.9.1&apos;].toString() == &apos;QBP&apos;)
+{
+return true;
+}
+return false;</script>
+      <operator>NONE</operator>
+    </rule>
+    <rule>
+      <sequenceNumber>1</sequenceNumber>
+      <name>Accept message if &quot;msg[&apos;MSH&apos;][&apos;MSH.9&apos;][&apos;MSH.9.2&apos;].toString()&quot; equals &apos;E45&apos;</name>
+      <data class="map">
+        <entry>
+          <string>Values</string>
+          <list>
+            <string>&apos;E45&apos;</string>
+          </list>
+        </entry>
+        <entry>
+          <string>Name</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>Field</string>
+          <string>msg[&apos;MSH&apos;][&apos;MSH.9&apos;][&apos;MSH.9.2&apos;].toString()</string>
+        </entry>
+        <entry>
+          <string>OriginalField</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>Equals</string>
+          <string>1</string>
+        </entry>
+      </data>
+      <type>Rule Builder</type>
+      <script>if(msg[&apos;MSH&apos;][&apos;MSH.9&apos;][&apos;MSH.9.2&apos;].toString() == &apos;E45&apos;)
+{
+return true;
+}
+return false;</script>
+      <operator>AND</operator>
+    </rule>
+    <rule>
+      <sequenceNumber>2</sequenceNumber>
+      <name>Accept message if &quot;msg[&apos;MSH&apos;][&apos;MSH.12&apos;][&apos;MSH.12.1&apos;].toString()&quot; equals &apos;2.4&apos;</name>
+      <data class="map">
+        <entry>
+          <string>Values</string>
+          <list>
+            <string>&apos;2.4&apos;</string>
+          </list>
+        </entry>
+        <entry>
+          <string>Name</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>Field</string>
+          <string>msg[&apos;MSH&apos;][&apos;MSH.12&apos;][&apos;MSH.12.1&apos;].toString()</string>
+        </entry>
+        <entry>
+          <string>OriginalField</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>Equals</string>
+          <string>1</string>
+        </entry>
+      </data>
+      <type>Rule Builder</type>
+      <script>if(msg[&apos;MSH&apos;][&apos;MSH.12&apos;][&apos;MSH.12.1&apos;].toString() == &apos;2.4&apos;)
+{
+return true;
+}
+return false;</script>
+      <operator>AND</operator>
+    </rule>
+  </rules>
+</filter>

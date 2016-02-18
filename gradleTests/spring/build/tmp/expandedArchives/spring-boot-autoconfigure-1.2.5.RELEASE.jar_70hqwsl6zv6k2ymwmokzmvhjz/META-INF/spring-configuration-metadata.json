@@ -1,0 +1,2987 @@
+{
+  "properties": [
+    {
+      "name": "flyway.baseline-description",
+      "type": "java.lang.String",
+      "sourceType": "org.flywaydb.core.Flyway"
+    },
+    {
+      "name": "flyway.baseline-on-migrate",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.flywaydb.core.Flyway"
+    },
+    {
+      "name": "flyway.baseline-version",
+      "type": "org.flywaydb.core.api.MigrationVersion",
+      "sourceType": "org.flywaydb.core.Flyway"
+    },
+    {
+      "name": "flyway.check-location",
+      "type": "java.lang.Boolean",
+      "description": "Check that migration scripts location exists.",
+      "sourceType": "org.springframework.boot.autoconfigure.flyway.FlywayProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "flyway.clean-on-validation-error",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.flywaydb.core.Flyway"
+    },
+    {
+      "name": "flyway.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable flyway.",
+      "sourceType": "org.springframework.boot.autoconfigure.flyway.FlywayProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "flyway.encoding",
+      "type": "java.lang.String",
+      "sourceType": "org.flywaydb.core.Flyway"
+    },
+    {
+      "name": "flyway.ignore-failed-future-migration",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.flywaydb.core.Flyway"
+    },
+    {
+      "name": "flyway.init-description",
+      "type": "java.lang.String",
+      "sourceType": "org.flywaydb.core.Flyway",
+      "deprecated": true
+    },
+    {
+      "name": "flyway.init-on-migrate",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.flywaydb.core.Flyway",
+      "deprecated": true
+    },
+    {
+      "name": "flyway.init-sqls",
+      "type": "java.util.List<java.lang.String>",
+      "description": "SQL statements to execute to initialize a connection immediately after obtaining\n it.",
+      "sourceType": "org.springframework.boot.autoconfigure.flyway.FlywayProperties"
+    },
+    {
+      "name": "flyway.init-version",
+      "type": "org.flywaydb.core.api.MigrationVersion",
+      "sourceType": "org.flywaydb.core.Flyway",
+      "deprecated": true
+    },
+    {
+      "name": "flyway.locations",
+      "type": "java.util.List<java.lang.String>",
+      "description": "Locations of migrations scripts.",
+      "sourceType": "org.springframework.boot.autoconfigure.flyway.FlywayProperties"
+    },
+    {
+      "name": "flyway.locations",
+      "type": "java.lang.String[]",
+      "sourceType": "org.flywaydb.core.Flyway"
+    },
+    {
+      "name": "flyway.out-of-order",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.flywaydb.core.Flyway"
+    },
+    {
+      "name": "flyway.password",
+      "type": "java.lang.String",
+      "description": "Login password of the database to migrate.",
+      "sourceType": "org.springframework.boot.autoconfigure.flyway.FlywayProperties"
+    },
+    {
+      "name": "flyway.placeholder-prefix",
+      "type": "java.lang.String",
+      "sourceType": "org.flywaydb.core.Flyway"
+    },
+    {
+      "name": "flyway.placeholder-suffix",
+      "type": "java.lang.String",
+      "sourceType": "org.flywaydb.core.Flyway"
+    },
+    {
+      "name": "flyway.placeholders",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "org.flywaydb.core.Flyway"
+    },
+    {
+      "name": "flyway.schemas",
+      "type": "java.lang.String[]",
+      "sourceType": "org.flywaydb.core.Flyway"
+    },
+    {
+      "name": "flyway.sql-migration-prefix",
+      "type": "java.lang.String",
+      "sourceType": "org.flywaydb.core.Flyway"
+    },
+    {
+      "name": "flyway.sql-migration-separator",
+      "type": "java.lang.String",
+      "sourceType": "org.flywaydb.core.Flyway"
+    },
+    {
+      "name": "flyway.sql-migration-suffix",
+      "type": "java.lang.String",
+      "sourceType": "org.flywaydb.core.Flyway"
+    },
+    {
+      "name": "flyway.table",
+      "type": "java.lang.String",
+      "sourceType": "org.flywaydb.core.Flyway"
+    },
+    {
+      "name": "flyway.target",
+      "type": "org.flywaydb.core.api.MigrationVersion",
+      "sourceType": "org.flywaydb.core.Flyway"
+    },
+    {
+      "name": "flyway.url",
+      "type": "java.lang.String",
+      "description": "JDBC url of the database to migrate. If not set, the primary configured data source\n is used.",
+      "sourceType": "org.springframework.boot.autoconfigure.flyway.FlywayProperties"
+    },
+    {
+      "name": "flyway.user",
+      "type": "java.lang.String",
+      "description": "Login user of the database to migrate.",
+      "sourceType": "org.springframework.boot.autoconfigure.flyway.FlywayProperties"
+    },
+    {
+      "name": "flyway.validate-on-migrate",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.flywaydb.core.Flyway"
+    },
+    {
+      "name": "http.mappers.json-pretty-print",
+      "type": "java.lang.Boolean",
+      "description": "Enable json pretty print.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.HttpMapperProperties",
+      "deprecated": true
+    },
+    {
+      "name": "http.mappers.json-sort-keys",
+      "type": "java.lang.Boolean",
+      "description": "Enable key sorting.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.HttpMapperProperties",
+      "deprecated": true
+    },
+    {
+      "name": "liquibase.change-log",
+      "type": "java.lang.String",
+      "description": "Change log configuration path.",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties",
+      "defaultValue": "classpath:/db/changelog/db.changelog-master.yaml"
+    },
+    {
+      "name": "liquibase.check-change-log-location",
+      "type": "java.lang.Boolean",
+      "description": "Check the change log location exists.",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "liquibase.contexts",
+      "type": "java.lang.String",
+      "description": "Comma-separated list of runtime contexts to use.",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "liquibase.default-schema",
+      "type": "java.lang.String",
+      "description": "Default database schema.",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "liquibase.drop-first",
+      "type": "java.lang.Boolean",
+      "description": "Drop the database schema first.",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "liquibase.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable liquibase support.",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "liquibase.password",
+      "type": "java.lang.String",
+      "description": "Login password of the database to migrate.",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "liquibase.url",
+      "type": "java.lang.String",
+      "description": "JDBC url of the database to migrate. If not set, the primary configured data source\n is used.",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "liquibase.user",
+      "type": "java.lang.String",
+      "description": "Login user of the database to migrate.",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "multipart.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable multipart upload handling.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.MultipartProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "multipart.file-size-threshold",
+      "type": "java.lang.String",
+      "description": "Threshold after which files will be written to disk. Values can use the suffixed\n \"MB\" or \"KB\" to indicate a Megabyte or Kilobyte size.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.MultipartProperties",
+      "defaultValue": "0"
+    },
+    {
+      "name": "multipart.location",
+      "type": "java.lang.String",
+      "description": "Intermediate location of uploaded files.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.MultipartProperties"
+    },
+    {
+      "name": "multipart.max-file-size",
+      "type": "java.lang.String",
+      "description": "Max file size. Values can use the suffixed \"MB\" or \"KB\" to indicate a Megabyte or\n Kilobyte size.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.MultipartProperties",
+      "defaultValue": "1Mb"
+    },
+    {
+      "name": "multipart.max-request-size",
+      "type": "java.lang.String",
+      "description": "Max request size. Values can use the suffixed \"MB\" or \"KB\" to indicate a Megabyte\n or Kilobyte size.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.MultipartProperties",
+      "defaultValue": "10Mb"
+    },
+    {
+      "name": "security.basic.authorize-mode",
+      "type": "org.springframework.boot.autoconfigure.security.SecurityAuthorizeMode",
+      "description": "Security authorize mode to apply.",
+      "sourceType": "org.springframework.boot.autoconfigure.security.SecurityProperties$Basic"
+    },
+    {
+      "name": "security.basic.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable basic authentication.",
+      "sourceType": "org.springframework.boot.autoconfigure.security.SecurityProperties$Basic",
+      "defaultValue": true
+    },
+    {
+      "name": "security.basic.path",
+      "type": "java.lang.String[]",
+      "description": "Comma-separated list of paths to secure.",
+      "sourceType": "org.springframework.boot.autoconfigure.security.SecurityProperties$Basic",
+      "defaultValue": ["/**"]
+    },
+    {
+      "name": "security.basic.realm",
+      "type": "java.lang.String",
+      "description": "HTTP basic realm name.",
+      "sourceType": "org.springframework.boot.autoconfigure.security.SecurityProperties$Basic",
+      "defaultValue": "Spring"
+    },
+    {
+      "name": "security.enable-csrf",
+      "type": "java.lang.Boolean",
+      "description": "Enable Cross Site Request Forgery support.",
+      "sourceType": "org.springframework.boot.autoconfigure.security.SecurityProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "security.filter-order",
+      "type": "java.lang.Integer",
+      "description": "Security filter chain order.",
+      "sourceType": "org.springframework.boot.autoconfigure.security.SecurityProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "security.headers.cache",
+      "type": "java.lang.Boolean",
+      "description": "Enable cache control HTTP headers.",
+      "sourceType": "org.springframework.boot.autoconfigure.security.SecurityProperties$Headers",
+      "defaultValue": false
+    },
+    {
+      "name": "security.headers.content-type",
+      "type": "java.lang.Boolean",
+      "description": "Enable \"X-Content-Type-Options\" header.",
+      "sourceType": "org.springframework.boot.autoconfigure.security.SecurityProperties$Headers",
+      "defaultValue": false
+    },
+    {
+      "name": "security.headers.frame",
+      "type": "java.lang.Boolean",
+      "description": "Enable \"X-Frame-Options\" header.",
+      "sourceType": "org.springframework.boot.autoconfigure.security.SecurityProperties$Headers",
+      "defaultValue": false
+    },
+    {
+      "name": "security.headers.hsts",
+      "type": "org.springframework.boot.autoconfigure.security.SecurityProperties$Headers$HSTS",
+      "description": "HTTP Strict Transport Security (HSTS) mode (none, domain, all).",
+      "sourceType": "org.springframework.boot.autoconfigure.security.SecurityProperties$Headers"
+    },
+    {
+      "name": "security.headers.xss",
+      "type": "java.lang.Boolean",
+      "description": "Enable cross site scripting (XSS) protection.",
+      "sourceType": "org.springframework.boot.autoconfigure.security.SecurityProperties$Headers",
+      "defaultValue": false
+    },
+    {
+      "name": "security.ignored",
+      "type": "java.util.List<java.lang.String>",
+      "description": "Comma-separated list of paths to exclude from the default secured paths.",
+      "sourceType": "org.springframework.boot.autoconfigure.security.SecurityProperties"
+    },
+    {
+      "name": "security.require-ssl",
+      "type": "java.lang.Boolean",
+      "description": "Enable secure channel for all requests.",
+      "sourceType": "org.springframework.boot.autoconfigure.security.SecurityProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "security.sessions",
+      "type": "org.springframework.security.config.http.SessionCreationPolicy",
+      "description": "Session creation policy (always, never, if_required, stateless).",
+      "sourceType": "org.springframework.boot.autoconfigure.security.SecurityProperties"
+    },
+    {
+      "name": "security.user.name",
+      "type": "java.lang.String",
+      "description": "Default user name.",
+      "sourceType": "org.springframework.boot.autoconfigure.security.SecurityProperties$User",
+      "defaultValue": "user"
+    },
+    {
+      "name": "security.user.password",
+      "type": "java.lang.String",
+      "description": "Password for the default user name.",
+      "sourceType": "org.springframework.boot.autoconfigure.security.SecurityProperties$User"
+    },
+    {
+      "name": "security.user.role",
+      "type": "java.util.List<java.lang.String>",
+      "description": "Granted roles for the default user name.",
+      "sourceType": "org.springframework.boot.autoconfigure.security.SecurityProperties$User"
+    },
+    {
+      "name": "server.address",
+      "type": "java.net.InetAddress",
+      "description": "Network address to which the server should bind to.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties"
+    },
+    {
+      "name": "server.context-parameters",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "description": "ServletContext parameters.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties"
+    },
+    {
+      "name": "server.context-path",
+      "type": "java.lang.String",
+      "description": "Context path of the application.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties"
+    },
+    {
+      "name": "server.port",
+      "type": "java.lang.Integer",
+      "description": "Server HTTP port.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties"
+    },
+    {
+      "name": "server.servlet-path",
+      "type": "java.lang.String",
+      "description": "Path of the main dispatcher servlet.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties",
+      "defaultValue": "/"
+    },
+    {
+      "name": "server.session-timeout",
+      "type": "java.lang.Integer",
+      "description": "Session timeout in seconds.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties"
+    },
+    {
+      "name": "server.ssl.ciphers",
+      "type": "java.lang.String[]",
+      "sourceType": "org.springframework.boot.context.embedded.Ssl"
+    },
+    {
+      "name": "server.ssl.client-auth",
+      "type": "org.springframework.boot.context.embedded.Ssl$ClientAuth",
+      "sourceType": "org.springframework.boot.context.embedded.Ssl"
+    },
+    {
+      "name": "server.ssl.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.boot.context.embedded.Ssl"
+    },
+    {
+      "name": "server.ssl.key-alias",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.embedded.Ssl"
+    },
+    {
+      "name": "server.ssl.key-password",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.embedded.Ssl"
+    },
+    {
+      "name": "server.ssl.key-store",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.embedded.Ssl"
+    },
+    {
+      "name": "server.ssl.key-store-password",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.embedded.Ssl"
+    },
+    {
+      "name": "server.ssl.key-store-provider",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.embedded.Ssl"
+    },
+    {
+      "name": "server.ssl.key-store-type",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.embedded.Ssl"
+    },
+    {
+      "name": "server.ssl.protocol",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.embedded.Ssl"
+    },
+    {
+      "name": "server.ssl.trust-store",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.embedded.Ssl"
+    },
+    {
+      "name": "server.ssl.trust-store-password",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.embedded.Ssl"
+    },
+    {
+      "name": "server.ssl.trust-store-provider",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.embedded.Ssl"
+    },
+    {
+      "name": "server.ssl.trust-store-type",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.context.embedded.Ssl"
+    },
+    {
+      "name": "server.tomcat.access-log-enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable access log.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat",
+      "defaultValue": false
+    },
+    {
+      "name": "server.tomcat.access-log-pattern",
+      "type": "java.lang.String",
+      "description": "Format pattern for access logs.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat"
+    },
+    {
+      "name": "server.tomcat.background-processor-delay",
+      "type": "java.lang.Integer",
+      "description": "Delay in seconds between the invocation of backgroundProcess methods.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat",
+      "defaultValue": 30
+    },
+    {
+      "name": "server.tomcat.basedir",
+      "type": "java.io.File",
+      "description": "Tomcat base directory. If not specified a temporary directory will be used.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat"
+    },
+    {
+      "name": "server.tomcat.compressable-mime-types",
+      "type": "java.lang.String",
+      "description": "Comma-separated list of MIME types for which compression is used.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat",
+      "defaultValue": "text/html,text/xml,text/plain"
+    },
+    {
+      "name": "server.tomcat.compression",
+      "type": "java.lang.String",
+      "description": "Controls response compression. Acceptable values are \"off\" to disable\n compression, \"on\" to enable compression of responses over 2048 bytes, \"force\"\n to force response compression, or an integer value to enable compression of\n responses with content length that is at least that value.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat",
+      "defaultValue": "off"
+    },
+    {
+      "name": "server.tomcat.internal-proxies",
+      "type": "java.lang.String",
+      "description": "Regular expression that matches proxies that are to be trusted.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat",
+      "defaultValue": "10\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}|192\\.168\\.\\d{1,3}\\.\\d{1,3}|169\\.254\\.\\d{1,3}\\.\\d{1,3}|127\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}"
+    },
+    {
+      "name": "server.tomcat.max-http-header-size",
+      "type": "java.lang.Integer",
+      "description": "Maximum size in bytes of the HTTP message header.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat",
+      "defaultValue": 0
+    },
+    {
+      "name": "server.tomcat.max-threads",
+      "type": "java.lang.Integer",
+      "description": "Maximum amount of worker threads.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat",
+      "defaultValue": 0
+    },
+    {
+      "name": "server.tomcat.port-header",
+      "type": "java.lang.String",
+      "description": "Name of the HTTP header used to override the original port value.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat"
+    },
+    {
+      "name": "server.tomcat.protocol-header",
+      "type": "java.lang.String",
+      "description": "Header that holds the incoming protocol, usually named \"X-Forwarded-Proto\".\n Configured as a RemoteIpValve only if remoteIpHeader is also set.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat"
+    },
+    {
+      "name": "server.tomcat.protocol-header-https-value",
+      "type": "java.lang.String",
+      "description": "Value of the protocol header that indicates that the incoming request uses SSL.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat",
+      "defaultValue": "https"
+    },
+    {
+      "name": "server.tomcat.remote-ip-header",
+      "type": "java.lang.String",
+      "description": "Name of the http header from which the remote ip is extracted. Configured as a\n RemoteIpValve only if remoteIpHeader is also set.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat"
+    },
+    {
+      "name": "server.tomcat.uri-encoding",
+      "type": "java.lang.String",
+      "description": "Character encoding to use to decode the URI.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat"
+    },
+    {
+      "name": "server.undertow.buffer-size",
+      "type": "java.lang.Integer",
+      "description": "Size of each buffer in bytes.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties$Undertow"
+    },
+    {
+      "name": "server.undertow.buffers-per-region",
+      "type": "java.lang.Integer",
+      "description": "Number of buffer per region.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties$Undertow"
+    },
+    {
+      "name": "server.undertow.direct-buffers",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties$Undertow"
+    },
+    {
+      "name": "server.undertow.io-threads",
+      "type": "java.lang.Integer",
+      "description": "Number of I/O threads to create for the worker.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties$Undertow"
+    },
+    {
+      "name": "server.undertow.worker-threads",
+      "type": "java.lang.Integer",
+      "description": "Number of worker threads.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties$Undertow"
+    },
+    {
+      "name": "spring.activemq.broker-url",
+      "type": "java.lang.String",
+      "description": "URL of the ActiveMQ broker. Auto-generated by default.",
+      "sourceType": "org.springframework.boot.autoconfigure.jms.activemq.ActiveMQProperties"
+    },
+    {
+      "name": "spring.activemq.in-memory",
+      "type": "java.lang.Boolean",
+      "description": "Specify if the default broker URL should be in memory. Ignored if an explicit\n broker has been specified.",
+      "sourceType": "org.springframework.boot.autoconfigure.jms.activemq.ActiveMQProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.activemq.password",
+      "type": "java.lang.String",
+      "description": "Login password of the broker.",
+      "sourceType": "org.springframework.boot.autoconfigure.jms.activemq.ActiveMQProperties"
+    },
+    {
+      "name": "spring.activemq.pooled",
+      "type": "java.lang.Boolean",
+      "description": "Specify if a PooledConnectionFactory should be created instead of a regular\n ConnectionFactory.",
+      "sourceType": "org.springframework.boot.autoconfigure.jms.activemq.ActiveMQProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.activemq.user",
+      "type": "java.lang.String",
+      "description": "Login user of the broker.",
+      "sourceType": "org.springframework.boot.autoconfigure.jms.activemq.ActiveMQProperties"
+    },
+    {
+      "name": "spring.aop.auto",
+      "type": "java.lang.Boolean",
+      "description": "Add @EnableAspectJAutoProxy.",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.aop.proxy-target-class",
+      "type": "java.lang.Boolean",
+      "description": "Whether subclass-based (CGLIB) proxies are to be created (true) as opposed to standard Java interface-based proxies (false).",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.batch.initializer.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Create the required batch tables on startup if necessary.",
+      "sourceType": "org.springframework.boot.autoconfigure.batch.BatchProperties$Initializer",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.batch.job.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Execute all Spring Batch jobs in the context on startup.",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.batch.job.names",
+      "type": "java.lang.String",
+      "description": "Comma-separated list of job names to execute on startup. By default, all Jobs\n found in the context are executed.",
+      "sourceType": "org.springframework.boot.autoconfigure.batch.BatchProperties$Job",
+      "defaultValue": ""
+    },
+    {
+      "name": "spring.batch.schema",
+      "type": "java.lang.String",
+      "description": "Path to the SQL file to use to initialize the database schema.",
+      "sourceType": "org.springframework.boot.autoconfigure.batch.BatchProperties",
+      "defaultValue": "classpath:org/springframework/batch/core/schema-@@platform@@.sql"
+    },
+    {
+      "name": "spring.dao.exceptiontranslation.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable the PersistenceExceptionTranslationPostProcessor.",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.data.elasticsearch.cluster-name",
+      "type": "java.lang.String",
+      "description": "Elasticsearch cluster name.",
+      "sourceType": "org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchProperties",
+      "defaultValue": "elasticsearch"
+    },
+    {
+      "name": "spring.data.elasticsearch.cluster-nodes",
+      "type": "java.lang.String",
+      "description": "Comma-separated list of cluster node addresses. If not specified, starts a client\n node.",
+      "sourceType": "org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchProperties"
+    },
+    {
+      "name": "spring.data.elasticsearch.properties",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "description": "Additional properties used to configure the client.",
+      "sourceType": "org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchProperties"
+    },
+    {
+      "name": "spring.data.elasticsearch.repositories.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable Elasticsearch repositories.",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.data.jpa.repositories.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable JPA repositories.",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.data.mongodb.authentication-database",
+      "type": "java.lang.String",
+      "description": "Authentication database name.",
+      "sourceType": "org.springframework.boot.autoconfigure.mongo.MongoProperties"
+    },
+    {
+      "name": "spring.data.mongodb.database",
+      "type": "java.lang.String",
+      "description": "Database name.",
+      "sourceType": "org.springframework.boot.autoconfigure.mongo.MongoProperties"
+    },
+    {
+      "name": "spring.data.mongodb.grid-fs-database",
+      "type": "java.lang.String",
+      "description": "GridFS database name.",
+      "sourceType": "org.springframework.boot.autoconfigure.mongo.MongoProperties"
+    },
+    {
+      "name": "spring.data.mongodb.host",
+      "type": "java.lang.String",
+      "description": "Mongo server host.",
+      "sourceType": "org.springframework.boot.autoconfigure.mongo.MongoProperties"
+    },
+    {
+      "name": "spring.data.mongodb.password",
+      "type": "char[]",
+      "description": "Login password of the mongo server.",
+      "sourceType": "org.springframework.boot.autoconfigure.mongo.MongoProperties"
+    },
+    {
+      "name": "spring.data.mongodb.port",
+      "type": "java.lang.Integer",
+      "description": "Mongo server port.",
+      "sourceType": "org.springframework.boot.autoconfigure.mongo.MongoProperties"
+    },
+    {
+      "name": "spring.data.mongodb.repositories.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable Mongo repositories.",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.data.mongodb.uri",
+      "type": "java.lang.String",
+      "description": "Mongo database URI. When set, host and port are ignored.",
+      "sourceType": "org.springframework.boot.autoconfigure.mongo.MongoProperties",
+      "defaultValue": "mongodb://localhost/test"
+    },
+    {
+      "name": "spring.data.mongodb.username",
+      "type": "java.lang.String",
+      "description": "Login user of the mongo server.",
+      "sourceType": "org.springframework.boot.autoconfigure.mongo.MongoProperties"
+    },
+    {
+      "name": "spring.data.rest.base-uri",
+      "type": "java.net.URI",
+      "sourceType": "org.springframework.data.rest.core.config.RepositoryRestConfiguration"
+    },
+    {
+      "name": "spring.data.rest.default-page-size",
+      "type": "java.lang.Integer",
+      "sourceType": "org.springframework.data.rest.core.config.RepositoryRestConfiguration"
+    },
+    {
+      "name": "spring.data.rest.limit-param-name",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.data.rest.core.config.RepositoryRestConfiguration"
+    },
+    {
+      "name": "spring.data.rest.max-page-size",
+      "type": "java.lang.Integer",
+      "sourceType": "org.springframework.data.rest.core.config.RepositoryRestConfiguration"
+    },
+    {
+      "name": "spring.data.rest.page-param-name",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.data.rest.core.config.RepositoryRestConfiguration"
+    },
+    {
+      "name": "spring.data.rest.return-body-on-create",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.data.rest.core.config.RepositoryRestConfiguration"
+    },
+    {
+      "name": "spring.data.rest.return-body-on-update",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.data.rest.core.config.RepositoryRestConfiguration"
+    },
+    {
+      "name": "spring.data.rest.sort-param-name",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.data.rest.core.config.RepositoryRestConfiguration"
+    },
+    {
+      "name": "spring.data.solr.host",
+      "type": "java.lang.String",
+      "description": "Solr host. Ignored if \"zk-host\" is set.",
+      "sourceType": "org.springframework.boot.autoconfigure.solr.SolrProperties",
+      "defaultValue": "http://127.0.0.1:8983/solr"
+    },
+    {
+      "name": "spring.data.solr.repositories.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable Solr repositories.",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.data.solr.zk-host",
+      "type": "java.lang.String",
+      "description": "ZooKeeper host address in the form HOST:PORT.",
+      "sourceType": "org.springframework.boot.autoconfigure.solr.SolrProperties"
+    },
+    {
+      "name": "spring.datasource.abandon-when-percentage-full",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.access-to-underlying-connection-allowed",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.access-to-underlying-connection-allowed",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.alternate-username-allowed",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.auto-commit",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.catalog",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.commit-on-return",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.connection-customizer-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.connection-init-sql",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.connection-init-sqls",
+      "type": "java.util.Collection",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.connection-properties",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.connection-test-query",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.connection-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.continue-on-error",
+      "type": "java.lang.Boolean",
+      "description": "Do not stop if an error occurs while initializing the database.",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.datasource.data",
+      "type": "java.lang.String",
+      "description": "Data (DML) script resource reference.",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.data-source",
+      "type": "java.lang.Object",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.data-source-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.data-source-jndi",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.data-source-jndi",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.data-source-properties",
+      "type": "java.util.Properties",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.db-properties",
+      "type": "java.util.Properties",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.default-auto-commit",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.default-auto-commit",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.default-catalog",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.default-catalog",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.default-read-only",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.default-read-only",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.default-transaction-isolation",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.default-transaction-isolation",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.driver-class-name",
+      "type": "java.lang.String",
+      "description": "Fully qualified name of the JDBC driver. Auto-detected based on the URL by default.",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.fair-queue",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.idle-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.ignore-exception-on-pre-load",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.init-sql",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.initial-size",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.initial-size",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.initialization-fail-fast",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.initialize",
+      "type": "java.lang.Boolean",
+      "description": "Populate the database using 'data.sql'.",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.datasource.isolate-internal-queries",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.jdbc-interceptors",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.jdbc-url",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.jdbc4-connection-test",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource",
+      "deprecated": true
+    },
+    {
+      "name": "spring.datasource.jmx-enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.jmx-enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable JMX support (if provided by the underlying pool).",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.datasource.jndi-name",
+      "type": "java.lang.String",
+      "description": "JNDI location of the datasource. Class, url, username & password are ignored when\n set.",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.leak-detection-threshold",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.log-abandoned",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.log-abandoned",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.log-validation-errors",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.login-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.login-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.login-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.max-active",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.max-active",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.max-age",
+      "type": "java.lang.Long",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.max-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.max-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.max-lifetime",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.max-open-prepared-statements",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.max-wait",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.max-wait",
+      "type": "java.lang.Long",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.maximum-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.metric-registry",
+      "type": "java.lang.Object",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.min-evictable-idle-time-millis",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.min-evictable-idle-time-millis",
+      "type": "java.lang.Long",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.min-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.min-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.minimum-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.name",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.num-tests-per-eviction-run",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.num-tests-per-eviction-run",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.password",
+      "type": "java.lang.String",
+      "description": "Login password of the database.",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.password",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.password",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.password",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.platform",
+      "type": "java.lang.String",
+      "description": "Platform to use in the schema resource (schema-${platform}.sql).",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
+      "defaultValue": "all"
+    },
+    {
+      "name": "spring.datasource.pool-name",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.pool-prepared-statements",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.propagate-interrupt-state",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.read-only",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.register-mbeans",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.remove-abandoned",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.remove-abandoned",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.remove-abandoned-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.remove-abandoned-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.rollback-on-return",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.schema",
+      "type": "java.lang.String",
+      "description": "Schema (DDL) script resource reference.",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.separator",
+      "type": "java.lang.String",
+      "description": "Statement separator in SQL initialization scripts.",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
+      "defaultValue": ";"
+    },
+    {
+      "name": "spring.datasource.sql-script-encoding",
+      "type": "java.lang.String",
+      "description": "SQL scripts encoding.",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.suspect-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.test-on-borrow",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.test-on-borrow",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.test-on-connect",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.test-on-return",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.test-on-return",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.test-while-idle",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.test-while-idle",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.time-between-eviction-runs-millis",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.time-between-eviction-runs-millis",
+      "type": "java.lang.Long",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.transaction-isolation",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.url",
+      "type": "java.lang.String",
+      "description": "JDBC url of the database.",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.url",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.url",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.use-disposable-connection-facade",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.use-equals",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.use-lock",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.username",
+      "type": "java.lang.String",
+      "description": "Login user of the database.",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.username",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.username",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariDataSource"
+    },
+    {
+      "name": "spring.datasource.username",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.validation-interval",
+      "type": "java.lang.Long",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.validation-query",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.validation-query",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.validation-query-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.validation-query-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.commons.dbcp.BasicDataSource"
+    },
+    {
+      "name": "spring.datasource.validator-class-name",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.xa.data-source-class-name",
+      "type": "java.lang.String",
+      "description": "XA datasource fully qualified name.",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$Xa"
+    },
+    {
+      "name": "spring.datasource.xa.properties",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "description": "Properties to pass to the XA data source.",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$Xa"
+    },
+    {
+      "name": "spring.freemarker.allow-request-override",
+      "type": "java.lang.Boolean",
+      "description": "Set whether HttpServletRequest attributes are allowed to override (hide) controller\n generated model attributes of the same name.",
+      "sourceType": "org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties"
+    },
+    {
+      "name": "spring.freemarker.cache",
+      "type": "java.lang.Boolean",
+      "description": "Enable template caching.",
+      "sourceType": "org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties"
+    },
+    {
+      "name": "spring.freemarker.char-set",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties",
+      "deprecated": true
+    },
+    {
+      "name": "spring.freemarker.charset",
+      "type": "java.lang.String",
+      "description": "Template encoding.",
+      "sourceType": "org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties"
+    },
+    {
+      "name": "spring.freemarker.check-template-location",
+      "type": "java.lang.Boolean",
+      "description": "Check that the templates location exists.",
+      "sourceType": "org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties"
+    },
+    {
+      "name": "spring.freemarker.content-type",
+      "type": "java.lang.String",
+      "description": "Content-Type value.",
+      "sourceType": "org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties"
+    },
+    {
+      "name": "spring.freemarker.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable MVC view resolution for this technology.",
+      "sourceType": "org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties"
+    },
+    {
+      "name": "spring.freemarker.expose-request-attributes",
+      "type": "java.lang.Boolean",
+      "description": "Set whether all request attributes should be added to the model prior to merging\n with the template.",
+      "sourceType": "org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties"
+    },
+    {
+      "name": "spring.freemarker.expose-session-attributes",
+      "type": "java.lang.Boolean",
+      "description": "Set whether all HttpSession attributes should be added to the model prior to\n merging with the template.",
+      "sourceType": "org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties"
+    },
+    {
+      "name": "spring.freemarker.expose-spring-macro-helpers",
+      "type": "java.lang.Boolean",
+      "description": "Set whether to expose a RequestContext for use by Spring's macro library, under the\n name \"springMacroRequestContext\".",
+      "sourceType": "org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties"
+    },
+    {
+      "name": "spring.freemarker.prefix",
+      "type": "java.lang.String",
+      "description": "Prefix that gets prepended to view names when building a URL.",
+      "sourceType": "org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties"
+    },
+    {
+      "name": "spring.freemarker.request-context-attribute",
+      "type": "java.lang.String",
+      "description": "Name of the RequestContext attribute for all views.",
+      "sourceType": "org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties"
+    },
+    {
+      "name": "spring.freemarker.settings",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "description": "Well-known FreeMarker keys which will be passed to FreeMarker's Configuration.",
+      "sourceType": "org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties"
+    },
+    {
+      "name": "spring.freemarker.suffix",
+      "type": "java.lang.String",
+      "description": "Suffix that gets appended to view names when building a URL.",
+      "sourceType": "org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties"
+    },
+    {
+      "name": "spring.freemarker.template-loader-path",
+      "type": "java.lang.String[]",
+      "description": "Comma-separated list of template paths.",
+      "sourceType": "org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties",
+      "defaultValue": ["classpath:/templates/"]
+    },
+    {
+      "name": "spring.freemarker.view-names",
+      "type": "java.lang.String[]",
+      "description": "White list of view names that can be resolved.",
+      "sourceType": "org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties"
+    },
+    {
+      "name": "spring.groovy.template.cache",
+      "type": "java.lang.Boolean",
+      "description": "Enable template caching.",
+      "sourceType": "org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateProperties"
+    },
+    {
+      "name": "spring.groovy.template.char-set",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateProperties",
+      "deprecated": true
+    },
+    {
+      "name": "spring.groovy.template.charset",
+      "type": "java.lang.String",
+      "description": "Template encoding.",
+      "sourceType": "org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateProperties"
+    },
+    {
+      "name": "spring.groovy.template.check-template-location",
+      "type": "java.lang.Boolean",
+      "description": "Check that the templates location exists.",
+      "sourceType": "org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateProperties"
+    },
+    {
+      "name": "spring.groovy.template.configuration.auto-escape",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.web.servlet.view.groovy.GroovyMarkupConfigurer"
+    },
+    {
+      "name": "spring.groovy.template.configuration.auto-indent",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.web.servlet.view.groovy.GroovyMarkupConfigurer"
+    },
+    {
+      "name": "spring.groovy.template.configuration.auto-indent-string",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.web.servlet.view.groovy.GroovyMarkupConfigurer"
+    },
+    {
+      "name": "spring.groovy.template.configuration.auto-new-line",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.web.servlet.view.groovy.GroovyMarkupConfigurer"
+    },
+    {
+      "name": "spring.groovy.template.configuration.base-template-class",
+      "type": "java.lang.Class<? extends groovy.text.markup.BaseTemplate>",
+      "sourceType": "org.springframework.web.servlet.view.groovy.GroovyMarkupConfigurer"
+    },
+    {
+      "name": "spring.groovy.template.configuration.cache-templates",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.web.servlet.view.groovy.GroovyMarkupConfigurer"
+    },
+    {
+      "name": "spring.groovy.template.configuration.declaration-encoding",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.web.servlet.view.groovy.GroovyMarkupConfigurer"
+    },
+    {
+      "name": "spring.groovy.template.configuration.expand-empty-elements",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.web.servlet.view.groovy.GroovyMarkupConfigurer"
+    },
+    {
+      "name": "spring.groovy.template.configuration.locale",
+      "type": "java.util.Locale",
+      "sourceType": "org.springframework.web.servlet.view.groovy.GroovyMarkupConfigurer"
+    },
+    {
+      "name": "spring.groovy.template.configuration.new-line-string",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.web.servlet.view.groovy.GroovyMarkupConfigurer"
+    },
+    {
+      "name": "spring.groovy.template.configuration.resource-loader-path",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.web.servlet.view.groovy.GroovyMarkupConfigurer"
+    },
+    {
+      "name": "spring.groovy.template.configuration.use-double-quotes",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.springframework.web.servlet.view.groovy.GroovyMarkupConfigurer"
+    },
+    {
+      "name": "spring.groovy.template.content-type",
+      "type": "java.lang.String",
+      "description": "Content-Type value.",
+      "sourceType": "org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateProperties"
+    },
+    {
+      "name": "spring.groovy.template.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable MVC view resolution for this technology.",
+      "sourceType": "org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateProperties"
+    },
+    {
+      "name": "spring.groovy.template.prefix",
+      "type": "java.lang.String",
+      "description": "Prefix that gets prepended to view names when building a URL.",
+      "sourceType": "org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateProperties",
+      "defaultValue": "classpath:/templates/"
+    },
+    {
+      "name": "spring.groovy.template.suffix",
+      "type": "java.lang.String",
+      "description": "Suffix that gets appended to view names when building a URL.",
+      "sourceType": "org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateProperties",
+      "defaultValue": ".tpl"
+    },
+    {
+      "name": "spring.groovy.template.view-names",
+      "type": "java.lang.String[]",
+      "description": "White list of view names that can be resolved.",
+      "sourceType": "org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateProperties"
+    },
+    {
+      "name": "spring.hateoas.apply-to-primary-object-mapper",
+      "type": "java.lang.Boolean",
+      "description": "Specify if HATEOAS support should be applied to the primary ObjectMapper.",
+      "sourceType": "org.springframework.boot.autoconfigure.hateoas.HateoasProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.hornetq.embedded.cluster-password",
+      "type": "java.lang.String",
+      "description": "Cluster password. Randomly generated on startup by default.",
+      "sourceType": "org.springframework.boot.autoconfigure.jms.hornetq.HornetQProperties$Embedded"
+    },
+    {
+      "name": "spring.hornetq.embedded.data-directory",
+      "type": "java.lang.String",
+      "description": "Journal file directory. Not necessary if persistence is turned off.",
+      "sourceType": "org.springframework.boot.autoconfigure.jms.hornetq.HornetQProperties$Embedded"
+    },
+    {
+      "name": "spring.hornetq.embedded.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable embedded mode if the HornetQ server APIs are available.",
+      "sourceType": "org.springframework.boot.autoconfigure.jms.hornetq.HornetQProperties$Embedded",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.hornetq.embedded.persistent",
+      "type": "java.lang.Boolean",
+      "description": "Enable persistent store.",
+      "sourceType": "org.springframework.boot.autoconfigure.jms.hornetq.HornetQProperties$Embedded",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.hornetq.embedded.queues",
+      "type": "java.lang.String[]",
+      "description": "Comma-separated list of queues to create on startup.",
+      "sourceType": "org.springframework.boot.autoconfigure.jms.hornetq.HornetQProperties$Embedded",
+      "defaultValue": []
+    },
+    {
+      "name": "spring.hornetq.embedded.server-id",
+      "type": "java.lang.Integer",
+      "description": "Server id. By default, an auto-incremented counter is used.",
+      "sourceType": "org.springframework.boot.autoconfigure.jms.hornetq.HornetQProperties$Embedded",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.hornetq.embedded.topics",
+      "type": "java.lang.String[]",
+      "description": "Comma-separated list of topics to create on startup.",
+      "sourceType": "org.springframework.boot.autoconfigure.jms.hornetq.HornetQProperties$Embedded",
+      "defaultValue": []
+    },
+    {
+      "name": "spring.hornetq.host",
+      "type": "java.lang.String",
+      "description": "HornetQ broker host.",
+      "sourceType": "org.springframework.boot.autoconfigure.jms.hornetq.HornetQProperties",
+      "defaultValue": "localhost"
+    },
+    {
+      "name": "spring.hornetq.mode",
+      "type": "org.springframework.boot.autoconfigure.jms.hornetq.HornetQMode",
+      "description": "HornetQ deployment mode, auto-detected by default. Can be explicitly set to\n \"native\" or \"embedded\".",
+      "sourceType": "org.springframework.boot.autoconfigure.jms.hornetq.HornetQProperties"
+    },
+    {
+      "name": "spring.hornetq.port",
+      "type": "java.lang.Integer",
+      "description": "HornetQ broker port.",
+      "sourceType": "org.springframework.boot.autoconfigure.jms.hornetq.HornetQProperties",
+      "defaultValue": 5445
+    },
+    {
+      "name": "spring.http.converters.preferred-json-mapper",
+      "type": "java.lang.String",
+      "description": "Preferred JSON mapper to use for HTTP message conversion."
+    },
+    {
+      "name": "spring.http.encoding.charset",
+      "type": "java.nio.charset.Charset",
+      "description": "Charset of HTTP requests and responses. Added to the \"Content-Type\" header if not\n set explicitly.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.HttpEncodingProperties"
+    },
+    {
+      "name": "spring.http.encoding.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable http encoding support.",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.http.encoding.force",
+      "type": "java.lang.Boolean",
+      "description": "Force the encoding to the configured charset on HTTP requests and responses.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.HttpEncodingProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.http.gzip.buffer-size",
+      "type": "java.lang.Integer",
+      "description": "Size of the output buffer in bytes.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.GzipFilterProperties"
+    },
+    {
+      "name": "spring.http.gzip.deflate-compression-level",
+      "type": "java.lang.Integer",
+      "description": "Level used for deflate compression (0-9).",
+      "sourceType": "org.springframework.boot.autoconfigure.web.GzipFilterProperties"
+    },
+    {
+      "name": "spring.http.gzip.deflate-no-wrap",
+      "type": "java.lang.Boolean",
+      "description": "noWrap setting for deflate compression.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.GzipFilterProperties"
+    },
+    {
+      "name": "spring.http.gzip.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable gzip filter support."
+    },
+    {
+      "name": "spring.http.gzip.exclude-agent-patterns",
+      "type": "java.lang.String",
+      "description": "Comma-separated list of regular expression patterns to control user agents excluded\n from compression.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.GzipFilterProperties"
+    },
+    {
+      "name": "spring.http.gzip.exclude-path-patterns",
+      "type": "java.lang.String",
+      "description": "Comma-separated list of regular expression patterns to control the paths that are\n excluded from compression.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.GzipFilterProperties"
+    },
+    {
+      "name": "spring.http.gzip.exclude-paths",
+      "type": "java.lang.String",
+      "description": "Comma-separated list of paths to exclude from compression. Uses String.startsWith\n to determine a match against the request's path.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.GzipFilterProperties"
+    },
+    {
+      "name": "spring.http.gzip.excluded-agents",
+      "type": "java.lang.String",
+      "description": "Comma-separated list of user agents to exclude from compression. String.contains is\n used to determine a match against the request's User-Agent header.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.GzipFilterProperties"
+    },
+    {
+      "name": "spring.http.gzip.excluded-mime-types",
+      "type": "java.util.List<org.springframework.util.MimeType>",
+      "description": "Comma-separated list of MIME types to exclude from compression.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.GzipFilterProperties"
+    },
+    {
+      "name": "spring.http.gzip.methods",
+      "type": "java.util.List<org.springframework.http.HttpMethod>",
+      "description": "Comma-separated list of HTTP methods for which compression is enabled.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.GzipFilterProperties"
+    },
+    {
+      "name": "spring.http.gzip.mime-types",
+      "type": "java.util.List<org.springframework.util.MimeType>",
+      "description": "Comma-separated list of MIME types which should be compressed.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.GzipFilterProperties"
+    },
+    {
+      "name": "spring.http.gzip.min-gzip-size",
+      "type": "java.lang.Integer",
+      "description": "Minimum content length required for compression to occur.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.GzipFilterProperties"
+    },
+    {
+      "name": "spring.http.gzip.vary",
+      "type": "java.lang.String",
+      "description": "Vary header sent on responses that may be compressed.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.GzipFilterProperties"
+    },
+    {
+      "name": "spring.jackson.date-format",
+      "type": "java.lang.String",
+      "description": "Date format string (yyyy-MM-dd HH:mm:ss), or a fully-qualified date format class\n name.",
+      "sourceType": "org.springframework.boot.autoconfigure.jackson.JacksonProperties"
+    },
+    {
+      "name": "spring.jackson.deserialization",
+      "type": "java.util.Map<com.fasterxml.jackson.databind.DeserializationFeature,java.lang.Boolean>",
+      "description": "Jackson on/off features that affect the way Java objects are deserialized.",
+      "sourceType": "org.springframework.boot.autoconfigure.jackson.JacksonProperties"
+    },
+    {
+      "name": "spring.jackson.generator",
+      "type": "java.util.Map<com.fasterxml.jackson.core.JsonGenerator.Feature,java.lang.Boolean>",
+      "description": "Jackson on/off features for generators.",
+      "sourceType": "org.springframework.boot.autoconfigure.jackson.JacksonProperties"
+    },
+    {
+      "name": "spring.jackson.joda-date-time-format",
+      "type": "java.lang.String",
+      "description": "Joda date time format string (yyyy-MM-dd HH:mm:ss). If not configured,\n \"date-format\" will be used as a fallback if it is configured with a format\n string.",
+      "sourceType": "org.springframework.boot.autoconfigure.jackson.JacksonProperties"
+    },
+    {
+      "name": "spring.jackson.mapper",
+      "type": "java.util.Map<com.fasterxml.jackson.databind.MapperFeature,java.lang.Boolean>",
+      "description": "Jackson general purpose on/off features.",
+      "sourceType": "org.springframework.boot.autoconfigure.jackson.JacksonProperties"
+    },
+    {
+      "name": "spring.jackson.parser",
+      "type": "java.util.Map<com.fasterxml.jackson.core.JsonParser.Feature,java.lang.Boolean>",
+      "description": "Jackson on/off features for parsers.",
+      "sourceType": "org.springframework.boot.autoconfigure.jackson.JacksonProperties"
+    },
+    {
+      "name": "spring.jackson.property-naming-strategy",
+      "type": "java.lang.String",
+      "description": "One of the constants on Jackson's PropertyNamingStrategy\n (CAMEL_CASE_TO_LOWER_CASE_WITH_UNDERSCORES). Can also be a fully-qualified class\n name of a PropertyNamingStrategy subclass.",
+      "sourceType": "org.springframework.boot.autoconfigure.jackson.JacksonProperties"
+    },
+    {
+      "name": "spring.jackson.serialization",
+      "type": "java.util.Map<com.fasterxml.jackson.databind.SerializationFeature,java.lang.Boolean>",
+      "description": "Jackson on/off features that affect the way Java objects are serialized.",
+      "sourceType": "org.springframework.boot.autoconfigure.jackson.JacksonProperties"
+    },
+    {
+      "name": "spring.jersey.filter.order",
+      "type": "java.lang.Integer",
+      "description": "Jersey filter chain order.",
+      "sourceType": "org.springframework.boot.autoconfigure.jersey.JerseyProperties$Filter",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.jersey.init",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "description": "Init parameters to pass to Jersey.",
+      "sourceType": "org.springframework.boot.autoconfigure.jersey.JerseyProperties"
+    },
+    {
+      "name": "spring.jersey.type",
+      "type": "org.springframework.boot.autoconfigure.jersey.JerseyProperties$Type",
+      "description": "Jersey integration type. Can be either \"servlet\" or \"filter\".",
+      "sourceType": "org.springframework.boot.autoconfigure.jersey.JerseyProperties"
+    },
+    {
+      "name": "spring.jms.jndi-name",
+      "type": "java.lang.String",
+      "description": "Connection factory JNDI name. When set, takes precedence to others connection\n factory auto-configurations.",
+      "sourceType": "org.springframework.boot.autoconfigure.jms.JmsProperties"
+    },
+    {
+      "name": "spring.jms.pub-sub-domain",
+      "type": "java.lang.Boolean",
+      "description": "Specify if the default destination type is topic.",
+      "sourceType": "org.springframework.boot.autoconfigure.jms.JmsProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.jmx.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Expose management beans to the JMX domain.",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.jpa.database",
+      "type": "org.springframework.orm.jpa.vendor.Database",
+      "description": "Target database to operate on, auto-detected by default. Can be alternatively set\n using the \"databasePlatform\" property.",
+      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties"
+    },
+    {
+      "name": "spring.jpa.database-platform",
+      "type": "java.lang.String",
+      "description": "Name of the target database to operate on, auto-detected by default. Can be\n alternatively set using the \"Database\" enum.",
+      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties"
+    },
+    {
+      "name": "spring.jpa.generate-ddl",
+      "type": "java.lang.Boolean",
+      "description": "Initialize the schema on startup.",
+      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.jpa.hibernate.ddl-auto",
+      "type": "java.lang.String",
+      "description": "DDL mode (\"none\", \"validate\", \"update\", \"create\", \"create-drop\"). This is\n actually a shortcut for the \"hibernate.hbm2ddl.auto\" property. Default to\n \"create-drop\" when using an embedded database, \"none\" otherwise.",
+      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Hibernate"
+    },
+    {
+      "name": "spring.jpa.hibernate.naming-strategy",
+      "type": "java.lang.Class<?>",
+      "description": "Naming strategy fully qualified name.",
+      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Hibernate"
+    },
+    {
+      "name": "spring.jpa.open-in-view",
+      "type": "java.lang.Boolean",
+      "description": "Register OpenEntityManagerInViewInterceptor. Binds a JPA EntityManager to the thread for the entire processing of the request.",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.jpa.properties",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "description": "Additional native properties to set on the JPA provider.",
+      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties"
+    },
+    {
+      "name": "spring.jpa.show-sql",
+      "type": "java.lang.Boolean",
+      "description": "Enable logging of SQL statements.",
+      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.jta.allow-multiple-lrc",
+      "type": "java.lang.Boolean",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.asynchronous2-pc",
+      "type": "java.lang.Boolean",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.background-recovery-interval",
+      "type": "java.lang.Integer",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.background-recovery-interval-seconds",
+      "type": "java.lang.Integer",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.current-node-only-recovery",
+      "type": "java.lang.Boolean",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.debug-zero-resource-transaction",
+      "type": "java.lang.Boolean",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.default-transaction-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.disable-jmx",
+      "type": "java.lang.Boolean",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable JTA support.",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.jta.exception-analyzer",
+      "type": "java.lang.String",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.filter-log-status",
+      "type": "java.lang.Boolean",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.force-batching-enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.forced-write-enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.graceful-shutdown-interval",
+      "type": "java.lang.Integer",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.jndi-transaction-synchronization-registry-name",
+      "type": "java.lang.String",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.jndi-user-transaction-name",
+      "type": "java.lang.String",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.journal",
+      "type": "java.lang.String",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.log-dir",
+      "type": "java.lang.String",
+      "description": "Transaction logs directory.",
+      "sourceType": "org.springframework.boot.autoconfigure.jta.JtaProperties"
+    },
+    {
+      "name": "spring.jta.log-part1-filename",
+      "type": "java.lang.String",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.log-part2-filename",
+      "type": "java.lang.String",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.max-log-size-in-mb",
+      "type": "java.lang.Integer",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.resource-configuration-filename",
+      "type": "java.lang.String",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.server-id",
+      "type": "java.lang.String",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.skip-corrupted-logs",
+      "type": "java.lang.Boolean",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.jta.transaction-manager-id",
+      "type": "java.lang.String",
+      "description": "Transaction manager unique identifier.",
+      "sourceType": "org.springframework.boot.autoconfigure.jta.JtaProperties"
+    },
+    {
+      "name": "spring.jta.warn-about-zero-resource-transaction",
+      "type": "java.lang.Boolean",
+      "sourceType": "bitronix.tm.Configuration"
+    },
+    {
+      "name": "spring.mail.default-encoding",
+      "type": "java.lang.String",
+      "description": "Default MimeMessage encoding.",
+      "sourceType": "org.springframework.boot.autoconfigure.mail.MailProperties",
+      "defaultValue": "UTF-8"
+    },
+    {
+      "name": "spring.mail.host",
+      "type": "java.lang.String",
+      "description": "SMTP server host.",
+      "sourceType": "org.springframework.boot.autoconfigure.mail.MailProperties"
+    },
+    {
+      "name": "spring.mail.password",
+      "type": "java.lang.String",
+      "description": "Login password of the SMTP server.",
+      "sourceType": "org.springframework.boot.autoconfigure.mail.MailProperties"
+    },
+    {
+      "name": "spring.mail.port",
+      "type": "java.lang.Integer",
+      "description": "SMTP server port.",
+      "sourceType": "org.springframework.boot.autoconfigure.mail.MailProperties"
+    },
+    {
+      "name": "spring.mail.properties",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "description": "Additional JavaMail session properties.",
+      "sourceType": "org.springframework.boot.autoconfigure.mail.MailProperties"
+    },
+    {
+      "name": "spring.mail.username",
+      "type": "java.lang.String",
+      "description": "Login user of the SMTP server.",
+      "sourceType": "org.springframework.boot.autoconfigure.mail.MailProperties"
+    },
+    {
+      "name": "spring.messages.basename",
+      "type": "java.lang.String",
+      "description": "Comma-separated list of basenames, each following the ResourceBundle convention.\n Essentially a fully-qualified classpath location. If it doesn't contain a package\n qualifier (such as \"org.mypackage\"), it will be resolved from the classpath root.",
+      "sourceType": "org.springframework.boot.autoconfigure.MessageSourceAutoConfiguration",
+      "defaultValue": "messages"
+    },
+    {
+      "name": "spring.messages.cache-seconds",
+      "type": "java.lang.Integer",
+      "description": "Loaded resource bundle files cache expiration, in seconds. When set to -1, bundles\n are cached forever.",
+      "sourceType": "org.springframework.boot.autoconfigure.MessageSourceAutoConfiguration",
+      "defaultValue": -1
+    },
+    {
+      "name": "spring.messages.encoding",
+      "type": "java.lang.String",
+      "description": "Message bundles encoding.",
+      "sourceType": "org.springframework.boot.autoconfigure.MessageSourceAutoConfiguration",
+      "defaultValue": "utf-8"
+    },
+    {
+      "name": "spring.mobile.devicedelegatingviewresolver.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable device view resolver.",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.mobile.devicedelegatingviewresolver.mobile-prefix",
+      "type": "java.lang.String",
+      "description": "Prefix that gets prepended to view names for mobile devices.",
+      "sourceType": "org.springframework.boot.autoconfigure.mobile.DeviceDelegatingViewResolverProperties",
+      "defaultValue": "mobile/"
+    },
+    {
+      "name": "spring.mobile.devicedelegatingviewresolver.mobile-suffix",
+      "type": "java.lang.String",
+      "description": "Suffix that gets appended to view names for mobile devices.",
+      "sourceType": "org.springframework.boot.autoconfigure.mobile.DeviceDelegatingViewResolverProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "spring.mobile.devicedelegatingviewresolver.normal-prefix",
+      "type": "java.lang.String",
+      "description": "Prefix that gets prepended to view names for normal devices.",
+      "sourceType": "org.springframework.boot.autoconfigure.mobile.DeviceDelegatingViewResolverProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "spring.mobile.devicedelegatingviewresolver.normal-suffix",
+      "type": "java.lang.String",
+      "description": "Suffix that gets appended to view names for normal devices.",
+      "sourceType": "org.springframework.boot.autoconfigure.mobile.DeviceDelegatingViewResolverProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "spring.mobile.devicedelegatingviewresolver.tablet-prefix",
+      "type": "java.lang.String",
+      "description": "Prefix that gets prepended to view names for tablet devices.",
+      "sourceType": "org.springframework.boot.autoconfigure.mobile.DeviceDelegatingViewResolverProperties",
+      "defaultValue": "tablet/"
+    },
+    {
+      "name": "spring.mobile.devicedelegatingviewresolver.tablet-suffix",
+      "type": "java.lang.String",
+      "description": "Suffix that gets appended to view names for tablet devices.",
+      "sourceType": "org.springframework.boot.autoconfigure.mobile.DeviceDelegatingViewResolverProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "spring.mobile.sitepreference.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable SitePreferenceHandler.",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.mustache.cache",
+      "type": "java.lang.Boolean",
+      "description": "Enable template caching.",
+      "sourceType": "org.springframework.boot.autoconfigure.mustache.MustacheProperties"
+    },
+    {
+      "name": "spring.mustache.char-set",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.mustache.MustacheProperties",
+      "deprecated": true
+    },
+    {
+      "name": "spring.mustache.charset",
+      "type": "java.lang.String",
+      "description": "Template encoding.",
+      "sourceType": "org.springframework.boot.autoconfigure.mustache.MustacheProperties"
+    },
+    {
+      "name": "spring.mustache.check-template-location",
+      "type": "java.lang.Boolean",
+      "description": "Check that the templates location exists.",
+      "sourceType": "org.springframework.boot.autoconfigure.mustache.MustacheProperties"
+    },
+    {
+      "name": "spring.mustache.content-type",
+      "type": "java.lang.String",
+      "description": "Content-Type value.",
+      "sourceType": "org.springframework.boot.autoconfigure.mustache.MustacheProperties"
+    },
+    {
+      "name": "spring.mustache.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable MVC view resolution for this technology.",
+      "sourceType": "org.springframework.boot.autoconfigure.mustache.MustacheProperties"
+    },
+    {
+      "name": "spring.mustache.prefix",
+      "type": "java.lang.String",
+      "description": "Prefix to apply to template names.",
+      "sourceType": "org.springframework.boot.autoconfigure.mustache.MustacheProperties",
+      "defaultValue": "classpath:/templates/"
+    },
+    {
+      "name": "spring.mustache.suffix",
+      "type": "java.lang.String",
+      "description": "Suffix to apply to template names.",
+      "sourceType": "org.springframework.boot.autoconfigure.mustache.MustacheProperties",
+      "defaultValue": ".html"
+    },
+    {
+      "name": "spring.mustache.view-names",
+      "type": "java.lang.String[]",
+      "description": "White list of view names that can be resolved.",
+      "sourceType": "org.springframework.boot.autoconfigure.mustache.MustacheProperties"
+    },
+    {
+      "name": "spring.mvc.date-format",
+      "type": "java.lang.String",
+      "description": "Date format to use (e.g. dd/MM/yyyy).",
+      "sourceType": "org.springframework.boot.autoconfigure.web.WebMvcProperties"
+    },
+    {
+      "name": "spring.mvc.ignore-default-model-on-redirect",
+      "type": "java.lang.Boolean",
+      "description": "If the the content of the \"default\" model should be ignored during redirect\n scenarios.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.WebMvcProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.mvc.locale",
+      "type": "java.lang.String",
+      "description": "Locale to use.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.WebMvcProperties"
+    },
+    {
+      "name": "spring.mvc.message-codes-resolver-format",
+      "type": "org.springframework.validation.DefaultMessageCodesResolver$Format",
+      "description": "Formatting strategy for message codes (PREFIX_ERROR_CODE, POSTFIX_ERROR_CODE).",
+      "sourceType": "org.springframework.boot.autoconfigure.web.WebMvcProperties"
+    },
+    {
+      "name": "spring.rabbitmq.addresses",
+      "type": "java.lang.String",
+      "description": "Comma-separated list of addresses to which the client should connect to.",
+      "sourceType": "org.springframework.boot.autoconfigure.amqp.RabbitProperties"
+    },
+    {
+      "name": "spring.rabbitmq.dynamic",
+      "type": "java.lang.Boolean",
+      "description": "Create an AmqpAdmin bean.",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.rabbitmq.host",
+      "type": "java.lang.String",
+      "description": "RabbitMQ host.",
+      "sourceType": "org.springframework.boot.autoconfigure.amqp.RabbitProperties",
+      "defaultValue": "localhost"
+    },
+    {
+      "name": "spring.rabbitmq.password",
+      "type": "java.lang.String",
+      "description": "Login to authenticate against the broker.",
+      "sourceType": "org.springframework.boot.autoconfigure.amqp.RabbitProperties"
+    },
+    {
+      "name": "spring.rabbitmq.port",
+      "type": "java.lang.Integer",
+      "description": "RabbitMQ port.",
+      "sourceType": "org.springframework.boot.autoconfigure.amqp.RabbitProperties",
+      "defaultValue": 5672
+    },
+    {
+      "name": "spring.rabbitmq.username",
+      "type": "java.lang.String",
+      "description": "Login user to authenticate to the broker.",
+      "sourceType": "org.springframework.boot.autoconfigure.amqp.RabbitProperties"
+    },
+    {
+      "name": "spring.rabbitmq.virtual-host",
+      "type": "java.lang.String",
+      "description": "Virtual host to use when connecting to the broker.",
+      "sourceType": "org.springframework.boot.autoconfigure.amqp.RabbitProperties"
+    },
+    {
+      "name": "spring.redis.database",
+      "type": "java.lang.Integer",
+      "description": "Database index used by the connection factory.",
+      "sourceType": "org.springframework.boot.autoconfigure.redis.RedisProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.redis.host",
+      "type": "java.lang.String",
+      "description": "Redis server host.",
+      "sourceType": "org.springframework.boot.autoconfigure.redis.RedisProperties",
+      "defaultValue": "localhost"
+    },
+    {
+      "name": "spring.redis.password",
+      "type": "java.lang.String",
+      "description": "Login password of the redis server.",
+      "sourceType": "org.springframework.boot.autoconfigure.redis.RedisProperties"
+    },
+    {
+      "name": "spring.redis.pool.max-active",
+      "type": "java.lang.Integer",
+      "description": "Max number of connections that can be allocated by the pool at a given time.\n Use a negative value for no limit.",
+      "sourceType": "org.springframework.boot.autoconfigure.redis.RedisProperties$Pool",
+      "defaultValue": 8
+    },
+    {
+      "name": "spring.redis.pool.max-idle",
+      "type": "java.lang.Integer",
+      "description": "Max number of \"idle\" connections in the pool. Use a negative value to indicate\n an unlimited number of idle connections.",
+      "sourceType": "org.springframework.boot.autoconfigure.redis.RedisProperties$Pool",
+      "defaultValue": 8
+    },
+    {
+      "name": "spring.redis.pool.max-wait",
+      "type": "java.lang.Integer",
+      "description": "Maximum amount of time (in milliseconds) a connection allocation should block\n before throwing an exception when the pool is exhausted. Use a negative value\n to block indefinitely.",
+      "sourceType": "org.springframework.boot.autoconfigure.redis.RedisProperties$Pool",
+      "defaultValue": -1
+    },
+    {
+      "name": "spring.redis.pool.min-idle",
+      "type": "java.lang.Integer",
+      "description": "Target for the minimum number of idle connections to maintain in the pool. This\n setting only has an effect if it is positive.",
+      "sourceType": "org.springframework.boot.autoconfigure.redis.RedisProperties$Pool",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.redis.port",
+      "type": "java.lang.Integer",
+      "description": "Redis server port.",
+      "sourceType": "org.springframework.boot.autoconfigure.redis.RedisProperties",
+      "defaultValue": 6379
+    },
+    {
+      "name": "spring.redis.sentinel.master",
+      "type": "java.lang.String",
+      "description": "Name of Redis server.",
+      "sourceType": "org.springframework.boot.autoconfigure.redis.RedisProperties$Sentinel"
+    },
+    {
+      "name": "spring.redis.sentinel.nodes",
+      "type": "java.lang.String",
+      "description": "Comma-separated list of host:port pairs.",
+      "sourceType": "org.springframework.boot.autoconfigure.redis.RedisProperties$Sentinel"
+    },
+    {
+      "name": "spring.resources.add-mappings",
+      "type": "java.lang.Boolean",
+      "description": "Enable default resource handling.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ResourceProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.resources.cache-period",
+      "type": "java.lang.Integer",
+      "description": "Cache period for the resources served by the resource handler, in seconds.",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ResourceProperties"
+    },
+    {
+      "name": "spring.social.auto-connection-views",
+      "type": "java.lang.Boolean",
+      "description": "Enable the connection status view for supported providers.",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.social.facebook.app-id",
+      "type": "java.lang.String",
+      "description": "Application id.",
+      "sourceType": "org.springframework.boot.autoconfigure.social.FacebookProperties"
+    },
+    {
+      "name": "spring.social.facebook.app-secret",
+      "type": "java.lang.String",
+      "description": "Application secret.",
+      "sourceType": "org.springframework.boot.autoconfigure.social.FacebookProperties"
+    },
+    {
+      "name": "spring.social.linkedin.app-id",
+      "type": "java.lang.String",
+      "description": "Application id.",
+      "sourceType": "org.springframework.boot.autoconfigure.social.LinkedInProperties"
+    },
+    {
+      "name": "spring.social.linkedin.app-secret",
+      "type": "java.lang.String",
+      "description": "Application secret.",
+      "sourceType": "org.springframework.boot.autoconfigure.social.LinkedInProperties"
+    },
+    {
+      "name": "spring.social.twitter.app-id",
+      "type": "java.lang.String",
+      "description": "Application id.",
+      "sourceType": "org.springframework.boot.autoconfigure.social.TwitterProperties"
+    },
+    {
+      "name": "spring.social.twitter.app-secret",
+      "type": "java.lang.String",
+      "description": "Application secret.",
+      "sourceType": "org.springframework.boot.autoconfigure.social.TwitterProperties"
+    },
+    {
+      "name": "spring.thymeleaf.cache",
+      "type": "java.lang.Boolean",
+      "description": "Enable template caching.",
+      "sourceType": "org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.thymeleaf.check-template-location",
+      "type": "java.lang.Boolean",
+      "description": "Check that the templates location exists.",
+      "sourceType": "org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.thymeleaf.content-type",
+      "type": "java.lang.String",
+      "description": "Content-Type value.",
+      "sourceType": "org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties",
+      "defaultValue": "text/html"
+    },
+    {
+      "name": "spring.thymeleaf.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable MVC Thymeleaf view resolution.",
+      "sourceType": "org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.thymeleaf.encoding",
+      "type": "java.lang.String",
+      "description": "Template encoding.",
+      "sourceType": "org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties",
+      "defaultValue": "UTF-8"
+    },
+    {
+      "name": "spring.thymeleaf.excluded-view-names",
+      "type": "java.lang.String[]",
+      "description": "Comma-separated list of view names that should be excluded from resolution.",
+      "sourceType": "org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties"
+    },
+    {
+      "name": "spring.thymeleaf.mode",
+      "type": "java.lang.String",
+      "description": "Template mode to be applied to templates. See also StandardTemplateModeHandlers.",
+      "sourceType": "org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties",
+      "defaultValue": "HTML5"
+    },
+    {
+      "name": "spring.thymeleaf.prefix",
+      "type": "java.lang.String",
+      "description": "Prefix that gets prepended to view names when building a URL.",
+      "sourceType": "org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties",
+      "defaultValue": "classpath:/templates/"
+    },
+    {
+      "name": "spring.thymeleaf.suffix",
+      "type": "java.lang.String",
+      "description": "Suffix that gets appended to view names when building a URL.",
+      "sourceType": "org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties",
+      "defaultValue": ".html"
+    },
+    {
+      "name": "spring.thymeleaf.view-names",
+      "type": "java.lang.String[]",
+      "description": "Comma-separated list of view names that can be resolved.",
+      "sourceType": "org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties"
+    },
+    {
+      "name": "spring.velocity.allow-request-override",
+      "type": "java.lang.Boolean",
+      "description": "Set whether HttpServletRequest attributes are allowed to override (hide) controller\n generated model attributes of the same name.",
+      "sourceType": "org.springframework.boot.autoconfigure.velocity.VelocityProperties"
+    },
+    {
+      "name": "spring.velocity.cache",
+      "type": "java.lang.Boolean",
+      "description": "Enable template caching.",
+      "sourceType": "org.springframework.boot.autoconfigure.velocity.VelocityProperties"
+    },
+    {
+      "name": "spring.velocity.char-set",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.boot.autoconfigure.velocity.VelocityProperties",
+      "deprecated": true
+    },
+    {
+      "name": "spring.velocity.charset",
+      "type": "java.lang.String",
+      "description": "Template encoding.",
+      "sourceType": "org.springframework.boot.autoconfigure.velocity.VelocityProperties"
+    },
+    {
+      "name": "spring.velocity.check-template-location",
+      "type": "java.lang.Boolean",
+      "description": "Check that the templates location exists.",
+      "sourceType": "org.springframework.boot.autoconfigure.velocity.VelocityProperties"
+    },
+    {
+      "name": "spring.velocity.content-type",
+      "type": "java.lang.String",
+      "description": "Content-Type value.",
+      "sourceType": "org.springframework.boot.autoconfigure.velocity.VelocityProperties"
+    },
+    {
+      "name": "spring.velocity.date-tool-attribute",
+      "type": "java.lang.String",
+      "description": "Name of the DateTool helper object to expose in the Velocity context of the view.",
+      "sourceType": "org.springframework.boot.autoconfigure.velocity.VelocityProperties"
+    },
+    {
+      "name": "spring.velocity.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable MVC view resolution for this technology.",
+      "sourceType": "org.springframework.boot.autoconfigure.velocity.VelocityProperties"
+    },
+    {
+      "name": "spring.velocity.expose-request-attributes",
+      "type": "java.lang.Boolean",
+      "description": "Set whether all request attributes should be added to the model prior to merging\n with the template.",
+      "sourceType": "org.springframework.boot.autoconfigure.velocity.VelocityProperties"
+    },
+    {
+      "name": "spring.velocity.expose-session-attributes",
+      "type": "java.lang.Boolean",
+      "description": "Set whether all HttpSession attributes should be added to the model prior to\n merging with the template.",
+      "sourceType": "org.springframework.boot.autoconfigure.velocity.VelocityProperties"
+    },
+    {
+      "name": "spring.velocity.expose-spring-macro-helpers",
+      "type": "java.lang.Boolean",
+      "description": "Set whether to expose a RequestContext for use by Spring's macro library, under the\n name \"springMacroRequestContext\".",
+      "sourceType": "org.springframework.boot.autoconfigure.velocity.VelocityProperties"
+    },
+    {
+      "name": "spring.velocity.number-tool-attribute",
+      "type": "java.lang.String",
+      "description": "Name of the NumberTool helper object to expose in the Velocity context of the view.",
+      "sourceType": "org.springframework.boot.autoconfigure.velocity.VelocityProperties"
+    },
+    {
+      "name": "spring.velocity.prefer-file-system-access",
+      "type": "java.lang.Boolean",
+      "description": "Prefer file system access for template loading. File system access enables hot\n detection of template changes.",
+      "sourceType": "org.springframework.boot.autoconfigure.velocity.VelocityProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.velocity.prefix",
+      "type": "java.lang.String",
+      "description": "Prefix that gets prepended to view names when building a URL.",
+      "sourceType": "org.springframework.boot.autoconfigure.velocity.VelocityProperties"
+    },
+    {
+      "name": "spring.velocity.properties",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "description": "Additional velocity properties.",
+      "sourceType": "org.springframework.boot.autoconfigure.velocity.VelocityProperties"
+    },
+    {
+      "name": "spring.velocity.request-context-attribute",
+      "type": "java.lang.String",
+      "description": "Name of the RequestContext attribute for all views.",
+      "sourceType": "org.springframework.boot.autoconfigure.velocity.VelocityProperties"
+    },
+    {
+      "name": "spring.velocity.resource-loader-path",
+      "type": "java.lang.String",
+      "description": "Template path.",
+      "sourceType": "org.springframework.boot.autoconfigure.velocity.VelocityProperties",
+      "defaultValue": "classpath:/templates/"
+    },
+    {
+      "name": "spring.velocity.suffix",
+      "type": "java.lang.String",
+      "description": "Suffix that gets appended to view names when building a URL.",
+      "sourceType": "org.springframework.boot.autoconfigure.velocity.VelocityProperties"
+    },
+    {
+      "name": "spring.velocity.toolbox-config-location",
+      "type": "java.lang.String",
+      "description": "Velocity Toolbox config location, for example \"/WEB-INF/toolbox.xml\". Automatically\n loads a Velocity Tools toolbox definition file and expose all defined tools in the\n specified scopes.",
+      "sourceType": "org.springframework.boot.autoconfigure.velocity.VelocityProperties"
+    },
+    {
+      "name": "spring.velocity.view-names",
+      "type": "java.lang.String[]",
+      "description": "White list of view names that can be resolved.",
+      "sourceType": "org.springframework.boot.autoconfigure.velocity.VelocityProperties"
+    },
+    {
+      "name": "spring.view.prefix",
+      "type": "java.lang.String",
+      "description": "Spring MVC view prefix."
+    },
+    {
+      "name": "spring.view.suffix",
+      "type": "java.lang.String",
+      "description": "Spring MVC view suffix."
+    }
+  ],
+  "groups": [
+    {
+      "name": "flyway",
+      "type": "org.springframework.boot.autoconfigure.flyway.FlywayProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.flyway.FlywayProperties"
+    },
+    {
+      "name": "flyway",
+      "type": "org.flywaydb.core.Flyway",
+      "sourceType": "org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration$FlywayConfiguration",
+      "sourceMethod": "flyway()"
+    },
+    {
+      "name": "http.mappers",
+      "type": "org.springframework.boot.autoconfigure.web.HttpMapperProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.web.HttpMapperProperties"
+    },
+    {
+      "name": "liquibase",
+      "type": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties"
+    },
+    {
+      "name": "multipart",
+      "type": "org.springframework.boot.autoconfigure.web.MultipartProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.web.MultipartProperties"
+    },
+    {
+      "name": "security",
+      "type": "org.springframework.boot.autoconfigure.security.SecurityProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.security.SecurityProperties"
+    },
+    {
+      "name": "security.basic",
+      "type": "org.springframework.boot.autoconfigure.security.SecurityProperties$Basic",
+      "sourceType": "org.springframework.boot.autoconfigure.security.SecurityProperties",
+      "sourceMethod": "getBasic()"
+    },
+    {
+      "name": "security.headers",
+      "type": "org.springframework.boot.autoconfigure.security.SecurityProperties$Headers",
+      "sourceType": "org.springframework.boot.autoconfigure.security.SecurityProperties",
+      "sourceMethod": "getHeaders()"
+    },
+    {
+      "name": "security.user",
+      "type": "org.springframework.boot.autoconfigure.security.SecurityProperties$User",
+      "sourceType": "org.springframework.boot.autoconfigure.security.SecurityProperties",
+      "sourceMethod": "getUser()"
+    },
+    {
+      "name": "server",
+      "type": "org.springframework.boot.autoconfigure.web.ServerProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties"
+    },
+    {
+      "name": "server.ssl",
+      "type": "org.springframework.boot.context.embedded.Ssl",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties",
+      "sourceMethod": "getSsl()"
+    },
+    {
+      "name": "server.tomcat",
+      "type": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties",
+      "sourceMethod": "getTomcat()"
+    },
+    {
+      "name": "server.undertow",
+      "type": "org.springframework.boot.autoconfigure.web.ServerProperties$Undertow",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ServerProperties",
+      "sourceMethod": "getUndertow()"
+    },
+    {
+      "name": "spring.activemq",
+      "type": "org.springframework.boot.autoconfigure.jms.activemq.ActiveMQProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.jms.activemq.ActiveMQProperties"
+    },
+    {
+      "name": "spring.batch",
+      "type": "org.springframework.boot.autoconfigure.batch.BatchProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.batch.BatchProperties"
+    },
+    {
+      "name": "spring.batch.initializer",
+      "type": "org.springframework.boot.autoconfigure.batch.BatchProperties$Initializer",
+      "sourceType": "org.springframework.boot.autoconfigure.batch.BatchProperties",
+      "sourceMethod": "getInitializer()"
+    },
+    {
+      "name": "spring.batch.job",
+      "type": "org.springframework.boot.autoconfigure.batch.BatchProperties$Job",
+      "sourceType": "org.springframework.boot.autoconfigure.batch.BatchProperties",
+      "sourceMethod": "getJob()"
+    },
+    {
+      "name": "spring.data.elasticsearch",
+      "type": "org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchProperties"
+    },
+    {
+      "name": "spring.data.mongodb",
+      "type": "org.springframework.boot.autoconfigure.mongo.MongoProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.mongo.MongoProperties"
+    },
+    {
+      "name": "spring.data.rest",
+      "type": "org.springframework.data.rest.core.config.RepositoryRestConfiguration",
+      "sourceType": "org.springframework.boot.autoconfigure.data.rest.SpringBootRepositoryRestMvcConfiguration",
+      "sourceMethod": "config()"
+    },
+    {
+      "name": "spring.data.solr",
+      "type": "org.springframework.boot.autoconfigure.solr.SolrProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.solr.SolrProperties"
+    },
+    {
+      "name": "spring.datasource",
+      "type": "javax.sql.DataSource",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$NonEmbeddedConfiguration",
+      "sourceMethod": "dataSource()"
+    },
+    {
+      "name": "spring.datasource",
+      "type": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties"
+    },
+    {
+      "name": "spring.datasource",
+      "type": "org.apache.tomcat.jdbc.pool.DataSource",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceConfigMetadata",
+      "sourceMethod": "tomcatDataSource()"
+    },
+    {
+      "name": "spring.datasource",
+      "type": "com.zaxxer.hikari.HikariDataSource",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceConfigMetadata",
+      "sourceMethod": "hikariDataSource()"
+    },
+    {
+      "name": "spring.datasource",
+      "type": "org.apache.commons.dbcp.BasicDataSource",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceConfigMetadata",
+      "sourceMethod": "dbcpDataSource()"
+    },
+    {
+      "name": "spring.datasource",
+      "type": "javax.sql.DataSource",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.XADataSourceAutoConfiguration",
+      "sourceMethod": "dataSource()"
+    },
+    {
+      "name": "spring.datasource.xa",
+      "type": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$Xa",
+      "sourceType": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
+      "sourceMethod": "getXa()"
+    },
+    {
+      "name": "spring.freemarker",
+      "type": "org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties"
+    },
+    {
+      "name": "spring.groovy.template",
+      "type": "org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateProperties"
+    },
+    {
+      "name": "spring.groovy.template.configuration",
+      "type": "org.springframework.web.servlet.view.groovy.GroovyMarkupConfigurer",
+      "sourceType": "org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration$GroovyMarkupConfiguration",
+      "sourceMethod": "groovyMarkupConfigurer()"
+    },
+    {
+      "name": "spring.hateoas",
+      "type": "org.springframework.boot.autoconfigure.hateoas.HateoasProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.hateoas.HateoasProperties"
+    },
+    {
+      "name": "spring.hornetq",
+      "type": "org.springframework.boot.autoconfigure.jms.hornetq.HornetQProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.jms.hornetq.HornetQProperties"
+    },
+    {
+      "name": "spring.hornetq.embedded",
+      "type": "org.springframework.boot.autoconfigure.jms.hornetq.HornetQProperties$Embedded",
+      "sourceType": "org.springframework.boot.autoconfigure.jms.hornetq.HornetQProperties",
+      "sourceMethod": "getEmbedded()"
+    },
+    {
+      "name": "spring.http.encoding",
+      "type": "org.springframework.boot.autoconfigure.web.HttpEncodingProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.web.HttpEncodingProperties"
+    },
+    {
+      "name": "spring.http.gzip",
+      "type": "org.springframework.boot.autoconfigure.web.GzipFilterProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.web.GzipFilterProperties"
+    },
+    {
+      "name": "spring.jackson",
+      "type": "org.springframework.boot.autoconfigure.jackson.JacksonProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.jackson.JacksonProperties"
+    },
+    {
+      "name": "spring.jersey",
+      "type": "org.springframework.boot.autoconfigure.jersey.JerseyProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.jersey.JerseyProperties"
+    },
+    {
+      "name": "spring.jersey.filter",
+      "type": "org.springframework.boot.autoconfigure.jersey.JerseyProperties$Filter",
+      "sourceType": "org.springframework.boot.autoconfigure.jersey.JerseyProperties",
+      "sourceMethod": "getFilter()"
+    },
+    {
+      "name": "spring.jms",
+      "type": "org.springframework.boot.autoconfigure.jms.JmsProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.jms.JmsProperties"
+    },
+    {
+      "name": "spring.jpa",
+      "type": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties"
+    },
+    {
+      "name": "spring.jpa.hibernate",
+      "type": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties$Hibernate",
+      "sourceType": "org.springframework.boot.autoconfigure.orm.jpa.JpaProperties",
+      "sourceMethod": "getHibernate()"
+    },
+    {
+      "name": "spring.jta",
+      "type": "org.springframework.boot.autoconfigure.jta.JtaProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.jta.JtaProperties"
+    },
+    {
+      "name": "spring.jta",
+      "type": "org.springframework.boot.jta.atomikos.AtomikosProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.jta.AtomikosJtaConfiguration",
+      "sourceMethod": "atomikosProperties()"
+    },
+    {
+      "name": "spring.jta",
+      "type": "bitronix.tm.Configuration",
+      "sourceType": "org.springframework.boot.autoconfigure.jta.BitronixJtaConfiguration",
+      "sourceMethod": "bitronixConfiguration()"
+    },
+    {
+      "name": "spring.mail",
+      "type": "org.springframework.boot.autoconfigure.mail.MailProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.mail.MailProperties"
+    },
+    {
+      "name": "spring.messages",
+      "type": "org.springframework.boot.autoconfigure.MessageSourceAutoConfiguration",
+      "sourceType": "org.springframework.boot.autoconfigure.MessageSourceAutoConfiguration"
+    },
+    {
+      "name": "spring.mobile.devicedelegatingviewresolver",
+      "type": "org.springframework.boot.autoconfigure.mobile.DeviceDelegatingViewResolverProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.mobile.DeviceDelegatingViewResolverProperties"
+    },
+    {
+      "name": "spring.mustache",
+      "type": "org.springframework.boot.autoconfigure.mustache.MustacheProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.mustache.MustacheProperties"
+    },
+    {
+      "name": "spring.mvc",
+      "type": "org.springframework.boot.autoconfigure.web.WebMvcProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.web.WebMvcProperties"
+    },
+    {
+      "name": "spring.rabbitmq",
+      "type": "org.springframework.boot.autoconfigure.amqp.RabbitProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.amqp.RabbitProperties"
+    },
+    {
+      "name": "spring.redis",
+      "type": "org.springframework.boot.autoconfigure.redis.RedisProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.redis.RedisProperties"
+    },
+    {
+      "name": "spring.redis.pool",
+      "type": "org.springframework.boot.autoconfigure.redis.RedisProperties$Pool",
+      "sourceType": "org.springframework.boot.autoconfigure.redis.RedisProperties",
+      "sourceMethod": "getPool()"
+    },
+    {
+      "name": "spring.redis.sentinel",
+      "type": "org.springframework.boot.autoconfigure.redis.RedisProperties$Sentinel",
+      "sourceType": "org.springframework.boot.autoconfigure.redis.RedisProperties",
+      "sourceMethod": "getSentinel()"
+    },
+    {
+      "name": "spring.resources",
+      "type": "org.springframework.boot.autoconfigure.web.ResourceProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.web.ResourceProperties"
+    },
+    {
+      "name": "spring.social.facebook",
+      "type": "org.springframework.boot.autoconfigure.social.FacebookProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.social.FacebookProperties"
+    },
+    {
+      "name": "spring.social.linkedin",
+      "type": "org.springframework.boot.autoconfigure.social.LinkedInProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.social.LinkedInProperties"
+    },
+    {
+      "name": "spring.social.twitter",
+      "type": "org.springframework.boot.autoconfigure.social.TwitterProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.social.TwitterProperties"
+    },
+    {
+      "name": "spring.thymeleaf",
+      "type": "org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties"
+    },
+    {
+      "name": "spring.velocity",
+      "type": "org.springframework.boot.autoconfigure.velocity.VelocityProperties",
+      "sourceType": "org.springframework.boot.autoconfigure.velocity.VelocityProperties"
+    }
+  ]
+}

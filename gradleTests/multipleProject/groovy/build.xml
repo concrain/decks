@@ -1,0 +1,32 @@
+  <!-- 
+       groovyc
+       compile all groovy files 
+       place this in the root dir of project
+       run ant  
+  -->
+
+<?xml version="1.0"?>
+<project name="GroovyBuild-01" default="compile">
+  <property name="groovy.home" value="/Users/russel/.gvm/groovy/current"/>
+  <property name="groovy.version" value="2.4.3"/>
+
+  <path id="groovy.classpath">
+  <fileset dir="${groovy.home}/embeddable">
+    <include name="groovy-all-${groovy.version}.jar" />
+  </fileset>
+  </path>
+
+  <taskdef name="groovyc" classname="org.codehaus.groovy.ant.Groovyc" classpathref="groovy.classpath"/>
+
+
+  <target name="compile" description="compile groovy sources">
+    <groovyc srcdir="src" listfiles="true" classpathref="groovy.classpath"/>
+
+    <antcall target="hello"/>  <!-- call another task -->
+  </target>
+
+  <target name="hello">
+    <echo> Ant has finished compiling the groovy files </echo>
+  </target>
+
+</project>

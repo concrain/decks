@@ -1,0 +1,64 @@
+
+  <!-- 
+       groovyc
+       compile all groovy files 
+       place this in the root dir of project
+       run ant	
+  -->
+<?xml version="1.0"?>
+<project name="GroovyBuild-01" default="compile">
+  <property name="groovy.home" value="/Users/russel/.gvm/groovy/current"/>
+  <property name="groovy.version" value="2.4.3"/>
+
+  <path id="groovy.classpath">
+	<fileset dir="${groovy.home}/embeddable">
+	  <include name="groovy-all-${groovy.version}.jar" />
+	</fileset>
+  </path>
+
+  <taskdef name="groovyc" classname="org.codehaus.groovy.ant.Groovyc" classpathref="groovy.classpath"/>
+
+  <target name="compile" description="compile groovy sources">
+    <groovyc srcdir="src" listfiles="true" classpathref="groovy.classpath"/>
+  </target>
+</project>
+
+
+  <!-- 
+       groovyc
+       joint compile all groovy and convert to java files
+       creates a new dir called 'classes' 
+       place this in the root dir of project
+       run ant	
+  -->
+ <?xml version="1.0"?>
+ <project name="JointBuild-01" default="compile">
+   <property name="groovy.home" value="/Users/russel/.gvm/groovy/current"/>
+   <property name="groovy.version" value="2.4.3"/>
+
+   <path id="groovy.classpath">
+     <fileset dir="${groovy.home}/embeddable">
+       <include name="groovy-all-${groovy.version}.jar" />
+     </fileset>
+   </path>
+
+   <target name="clean" description="remove all built files">
+     <delete dir="classes" />
+   </target>
+
+   <target name="compile" depends="init" description="compile java and groovy sources">
+     <mkdir dir="classes" />
+
+     <groovyc destdir="classes" srcdir="src" listfiles="true" keepStubs="true" stubdir="stubs">
+       <javac debug="on" deprecation="true"/>
+       <classpath>
+         <fileset dir="classes"/>
+         <path refid="groovy.classpath"/>
+       </classpath>
+     </groovyc>
+   </target>
+
+   <target name="init">
+     <taskdef name="groovyc" classname="org.codehaus.groovy.ant.Groovyc" classpathref="groovy.classpath"/>
+   </target>
+ </project>

@@ -1,0 +1,164 @@
+<transformer version="3.0.0">
+  <steps>
+    <step>
+      <sequenceNumber>0</sequenceNumber>
+      <name>MSH segment updater</name>
+      <script>// assignes inboud message to outbound message template
+
+tmp = msg;&#xd;tmp[&apos;MSH&apos;][&apos;MSH.7&apos;][&apos;MSH.7.1&apos;] = DateUtil.getCurrentDate(&apos;yyyyMMdd&apos;);&#xd;tmp[&apos;MSH&apos;][&apos;MSH.10&apos;][&apos;MSH.10.1&apos;] = UUIDGenerator.getUUID();</script>
+      <type>JavaScript</type>
+      <data class="map">
+        <entry>
+          <string>Script</string>
+          <string>// assignes inboud message to outbound message template
+
+tmp = msg;&#xd;tmp[&apos;MSH&apos;][&apos;MSH.7&apos;][&apos;MSH.7.1&apos;] = DateUtil.getCurrentDate(&apos;yyyyMMdd&apos;);&#xd;tmp[&apos;MSH&apos;][&apos;MSH.10&apos;][&apos;MSH.10.1&apos;] = UUIDGenerator.getUUID();</string>
+        </entry>
+      </data>
+    </step>
+    <step>
+      <sequenceNumber>1</sequenceNumber>
+      <name>Patient Identifer generator</name>
+      <script>// creates a number sequence to mimic a patient identifier ex..  SSN
+
+tmp[&apos;QPD&apos;][&apos;QPD.7&apos;][&apos;QPD.7.1&apos;] = getPatientID();
+&#xd;function getPatientID() {&#xd;  var patientId = &apos;&apos;;&#xd;  for ( var i = 0; i &lt;= 9; i++ ) {&#xd;       patientId += Math.floor( (Math.random() * 10) );&#xd;  }&#xd;  return patientId;&#xd;};</script>
+      <type>JavaScript</type>
+      <data class="map">
+        <entry>
+          <string>Script</string>
+          <string>// creates a number sequence to mimic a patient identifier ex..  SSN
+
+tmp[&apos;QPD&apos;][&apos;QPD.7&apos;][&apos;QPD.7.1&apos;] = getPatientID();
+&#xd;function getPatientID() {&#xd;  var patientId = &apos;&apos;;&#xd;  for ( var i = 0; i &lt;= 9; i++ ) {&#xd;       patientId += Math.floor( (Math.random() * 10) );&#xd;  }&#xd;  return patientId;&#xd;};</string>
+        </entry>
+      </data>
+    </step>
+    <step>
+      <sequenceNumber>2</sequenceNumber>
+      <name>Query Tag generator</name>
+      <script>tmp[&apos;QPD&apos;][&apos;QPD.2&apos;][&apos;QPD.2.1&apos;] = validate(tmp[&apos;MSH&apos;][&apos;MSH.10&apos;][&apos;MSH.10.1&apos;].substring(24), &apos;&apos;, new Array());</script>
+      <type>Message Builder</type>
+      <data class="map">
+        <entry>
+          <string>DefaultValue</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>RegularExpressions</string>
+          <list/>
+        </entry>
+        <entry>
+          <string>Mapping</string>
+          <string>tmp[&apos;MSH&apos;][&apos;MSH.10&apos;][&apos;MSH.10.1&apos;].substring(24)</string>
+        </entry>
+        <entry>
+          <string>Variable</string>
+          <string>tmp[&apos;QPD&apos;][&apos;QPD.2&apos;][&apos;QPD.2.1&apos;]</string>
+        </entry>
+      </data>
+    </step>
+    <step>
+      <sequenceNumber>3</sequenceNumber>
+      <name>INTENTIONALLY MALFORMED -FOR TEST ONLY</name>
+      <script>/*  verifies the patients first name message field
+ 	if message is a v2error it changes three message fields
+	message type
+	trigger event
+	version number  	
+*/
+
+if ( &apos;v2error&apos; == tmp[&apos;QPD&apos;][&apos;QPD.8&apos;][&apos;QPD.8.2&apos;].toString() ) {&#xd;       tmp[&apos;MSH&apos;][&apos;MSH.9&apos;][&apos;MSH.9.1&apos;] = &apos;QQQ&apos;;&#xd;       tmp[&apos;MSH&apos;][&apos;MSH.9&apos;][&apos;MSH.9.2&apos;] = &apos;E99&apos;;&#xd;       tmp[&apos;MSH&apos;][&apos;MSH.12&apos;][&apos;MSH.12.1&apos;] = &apos;9.9&apos;;&#xd;}</script>
+      <type>JavaScript</type>
+      <data class="map">
+        <entry>
+          <string>Script</string>
+          <string>/*  verifies the patients first name message field
+ 	if message is a v2error it changes three message fields
+	message type
+	trigger event
+	version number  	
+*/
+
+if ( &apos;v2error&apos; == tmp[&apos;QPD&apos;][&apos;QPD.8&apos;][&apos;QPD.8.2&apos;].toString() ) {&#xd;       tmp[&apos;MSH&apos;][&apos;MSH.9&apos;][&apos;MSH.9.1&apos;] = &apos;QQQ&apos;;&#xd;       tmp[&apos;MSH&apos;][&apos;MSH.9&apos;][&apos;MSH.9.2&apos;] = &apos;E99&apos;;&#xd;       tmp[&apos;MSH&apos;][&apos;MSH.12&apos;][&apos;MSH.12.1&apos;] = &apos;9.9&apos;;&#xd;}</string>
+        </entry>
+      </data>
+    </step>
+  </steps>
+  <inboundTemplate encoding="base64">TVNIfF5+XCZ8QURNfFNlbmRlcnxBTEx8UmVjZWl2ZXJ8MjAwMDA1MjcxMjAwMDB8fFFCUF5FNDV8
+ZDg1MzlhMDJkZjQ4fER8Mi40fHx8QUx8QUwgCkhEUnxTZW5kZXJeUVJeNDQ1Xl5eXl58UmVjZWl2
+ZXJeUVJeNDQ1Xl5eXl58UEgNU0VDfFNlbmRlcnx8fHxVc2VySWRAT3JnYW5pemF0aW9uLmNvbQ1R
+UER8RTQ1XkVsaWdpYmlsaXR5IFF1ZXJ5XkNJSEkwMDAzfGIzYTEyZjBjfHx8fHw5ODc2NTQzMjE5
+Xl5eSVNPXlBITnxFdmVyeXdvbWFuXk1hcnleUGF0cmlja15eXl5MXnwxOTY4MDEyMHx8TVNQXnx8
+fHxFWFQgClJDUHxJ</inboundTemplate>
+  <outboundTemplate encoding="base64">TVNIfF5+XCZ8QURNfFNlbmRlcnxBTEx8UmVjZWl2ZXJ8MjAwMDA1MjcxMjAwMDB8fFFCUF5FNDV8
+ZDg1MzlhMDJkZjQ4fER8Mi40fHx8QUx8QUwgCkhEUnxTZW5kZXJeUVJeNDQ1Xl5eXl58UmVjZWl2
+ZXJeUVJeNDQ1Xl5eXl58UEgNU0VDfFNlbmRlcnx8fHxVc2VySWRAT3JnYW5pemF0aW9uLmNvbQ1R
+UER8RTQ1XkVsaWdpYmlsaXR5IFF1ZXJ5XkNJSEkwMDAzfGIzYTEyZjBjfHx8fHw5ODc2NTQzMjE5
+Xl5eSVNPXlBITnxFdmVyeXdvbWFuXk1hcnleUGF0cmlja15eXl5MXnwxOTY4MDEyMHx8TVNQXnx8
+fHxFWFQgClJDUHxJ</outboundTemplate>
+  <inboundDataType>HL7V2</inboundDataType>
+  <outboundDataType>HL7V2</outboundDataType>
+  <inboundProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2DataTypeProperties" version="3.0.0">
+    <serializationProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2SerializationProperties" version="3.0.0">
+      <handleRepetitions>true</handleRepetitions>
+      <handleSubcomponents>true</handleSubcomponents>
+      <useStrictParser>false</useStrictParser>
+      <useStrictValidation>false</useStrictValidation>
+      <stripNamespaces>true</stripNamespaces>
+      <segmentDelimiter>\r</segmentDelimiter>
+      <convertLineBreaks>true</convertLineBreaks>
+    </serializationProperties>
+    <deserializationProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2DeserializationProperties" version="3.0.0">
+      <useStrictParser>false</useStrictParser>
+      <useStrictValidation>false</useStrictValidation>
+      <segmentDelimiter>\r</segmentDelimiter>
+    </deserializationProperties>
+    <responseGenerationProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2ResponseGenerationProperties" version="3.0.0">
+      <segmentDelimiter>\r</segmentDelimiter>
+      <successfulACKCode>AA</successfulACKCode>
+      <successfulACKMessage></successfulACKMessage>
+      <errorACKCode>AE</errorACKCode>
+      <errorACKMessage>An Error Occured Processing Message.</errorACKMessage>
+      <rejectedACKCode>AR</rejectedACKCode>
+      <rejectedACKMessage>Message Rejected.</rejectedACKMessage>
+      <msh15ACKAccept>false</msh15ACKAccept>
+    </responseGenerationProperties>
+    <responseValidationProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2ResponseValidationProperties" version="3.0.0">
+      <successfulACKCode>AA</successfulACKCode>
+      <errorACKCode>AE</errorACKCode>
+      <rejectedACKCode>AR</rejectedACKCode>
+    </responseValidationProperties>
+  </inboundProperties>
+  <outboundProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2DataTypeProperties" version="3.0.0">
+    <serializationProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2SerializationProperties" version="3.0.0">
+      <handleRepetitions>true</handleRepetitions>
+      <handleSubcomponents>true</handleSubcomponents>
+      <useStrictParser>false</useStrictParser>
+      <useStrictValidation>false</useStrictValidation>
+      <stripNamespaces>true</stripNamespaces>
+      <segmentDelimiter>\r</segmentDelimiter>
+      <convertLineBreaks>true</convertLineBreaks>
+    </serializationProperties>
+    <deserializationProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2DeserializationProperties" version="3.0.0">
+      <useStrictParser>false</useStrictParser>
+      <useStrictValidation>false</useStrictValidation>
+      <segmentDelimiter>\r</segmentDelimiter>
+    </deserializationProperties>
+    <responseGenerationProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2ResponseGenerationProperties" version="3.0.0">
+      <segmentDelimiter>\r</segmentDelimiter>
+      <successfulACKCode>AA</successfulACKCode>
+      <successfulACKMessage></successfulACKMessage>
+      <errorACKCode>AE</errorACKCode>
+      <errorACKMessage>An Error Occured Processing Message.</errorACKMessage>
+      <rejectedACKCode>AR</rejectedACKCode>
+      <rejectedACKMessage>Message Rejected.</rejectedACKMessage>
+      <msh15ACKAccept>false</msh15ACKAccept>
+    </responseGenerationProperties>
+    <responseValidationProperties class="com.mirth.connect.plugins.datatypes.hl7v2.HL7v2ResponseValidationProperties" version="3.0.0">
+      <successfulACKCode>AA</successfulACKCode>
+      <errorACKCode>AE</errorACKCode>
+      <rejectedACKCode>AR</rejectedACKCode>
+    </responseValidationProperties>
+  </outboundProperties>
+</transformer>

@@ -1,0 +1,49 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+
+repositories {
+	mavenCentral()  								
+}
+dependencies {
+	compile 'org.codehaus.groovy:groovy-all:2.4.3'			//* needed to compile groovy code */								
+    compile 'org.apache.commons:commons-lang3:3.3.2' 	
+}
+
+
+sourceSets {												//* set directory roots */
+	main.groovy.srcDir('src/main')	
+	test.groovy.srcDir('src/test')
+}
+jar {
+	baseName = 'sample-groovy'
+	version = '1.0'
+	manifest.attributes('Main-Class':'com.app.Main')		//* add main() to Manifest, so Gradle knows where the main() is located */
+
+	from configurations.compile.collect { zipTree it }   	//* add dependencies to jar */
+}
+
+
+
+task run (group: 'run app', type: JavaExec, dependsOn: classes, description: 'run application from compiled classes') {
+	
+	  // configuration phase
+	main = 'com.app.Main'
+	classpath = sourceSets.main.runtimeClasspath
+
+	  // execution phase
+	args 'hellO russeL'
+}
+task runJar (group: 'run app', type: Exec, dependsOn: jar, description: 'run application from jar') {
+	
+	  // configuration phase
+	executable 'java'
+	ext.msg = ['Hello ', 'Russel']
+
+	  // execution phase
+    args '-jar', "$jar.archivePath", "$msg" 				//* the final parameter is passed to the main method */
+}
+
+
+
+
+
