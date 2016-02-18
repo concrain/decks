@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="katas.diamond.DiamondSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-08-25T22:05:55" hostname="CDSC02NJLNUG3QJ.local" time="0.191">
+  <properties/>
+  <testcase name="diamonds are shiny" classname="katas.diamond.DiamondSpec" time="0.191"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

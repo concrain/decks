@@ -1,0 +1,32 @@
+= The Vending Machine Kata
+
+Your task is to implement the `VendingMachine` class with appropriate tests.
+You should *not* attempt to implement the `VendingMachineHardware` interface – this is the job of the hardware team!
+Change or extend anything else if you feel like you need to.
+Code coverage is only applied to `VendingMachine`.
+
+A vending machine exposes the following methods:
+
+  `void insert(Coin)`
+  `void purchase(Product)`
+  `void stock(Product, int)`
+
+The `insert` method adds the value of a `Coin` to credit.
+
+The `stock` method adds products to the machine's stock.
+
+The `purchase` method dispenses an item if there is sufficient credit.
+It also deducts the item cost from credit if an item is dispensed and returns change if an the amount of credit is greater than the cost of the item dispensed.
+If the requested item is out of stock, there is insufficient credit or it's impossible to dispense change for the purchase the method throws an exception.
+If an exception is thrown the method does not dispense the product or any change or deduct from credit.
+
+== Extra credit
+
+=== Interface enhancements
+
+Allow the user to make multiple purchases before receiving change.
+
+=== Persistence
+
+Use a persistent store (for example _h2_ or _jedis_) to track stock and coin levels.
+Manage the store so that your tests remain idempotent.

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="katas.anagrams.AnagramsSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-08-25T21:38:07" hostname="CDSC02NJLNUG3QJ.local" time="0.204">
+  <properties/>
+  <testcase name="anagrams are silly" classname="katas.anagrams.AnagramsSpec" time="0.204"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

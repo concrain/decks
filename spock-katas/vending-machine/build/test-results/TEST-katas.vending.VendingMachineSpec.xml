@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="katas.vending.VendingMachineSpec" tests="1" skipped="0" failures="1" errors="0" timestamp="2015-08-26T16:55:12" hostname="CDSC02NJLNUG3QJ.local" time="0.184">
+  <properties/>
+  <testcase name="" classname="katas.vending.VendingMachineSpec" time="0.184">
+    <failure message="org.spockframework.mock.CannotCreateMockException: Cannot create mock for class katas.vending.Coin because Java mocks cannot mock final classes. If the code under test is written in Groovy, use a Groovy mock." type="org.spockframework.mock.CannotCreateMockException">org.spockframework.mock.CannotCreateMockException: Cannot create mock for class katas.vending.Coin because Java mocks cannot mock final classes. If the code under test is written in Groovy, use a Groovy mock.
+	at org.spockframework.mock.runtime.JavaMockFactory.create(JavaMockFactory.java:41)
+	at org.spockframework.mock.runtime.CompositeMockFactory.create(CompositeMockFactory.java:44)
+	at org.spockframework.lang.SpecInternals.createMock(SpecInternals.java:45)
+	at org.spockframework.lang.SpecInternals.createMockImpl(SpecInternals.java:281)
+	at org.spockframework.lang.SpecInternals.MockImpl(SpecInternals.java:83)
+	at katas.vending.VendingMachineSpec.setup(VendingMachineSpec.groovy:12)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
