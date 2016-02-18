@@ -1,0 +1,25 @@
+[0m[[0minfo[0m] [0m[32mClassSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mScala classes[0m[0m
+[0m[[0minfo[0m] [0m[32m- are defined with class keyword[0m[0m
+[0m[[0minfo[0m] [0m[32m- are instantiated with the new keyword[0m[0m
+[0m[[0minfo[0m] [0m[32m- can have class parameters[0m[0m
+[0m[[0minfo[0m] [0m[32m- can have auxillary constructors[0m[0m
+[0m[[0minfo[0m] [0m[32m- can contain immutable fields[0m[0m
+[0m[[0minfo[0m] [0m[32m- can contain mutable fields[0m[0m
+[0m[[0minfo[0m] [0m[32m- can promote class parameters to immutable fields[0m[0m
+[0m[[0minfo[0m] [0m[32m  can have methods defined with the def keyword[0m[0m
+[0m[[0minfo[0m] [0m[32m  - which are public by default[0m[0m
+[0m[[0minfo[0m] [0m[32m  - which can have a parameter list[0m[0m
+[0m[[0minfo[0m] [0m[32m  - which can have a symbolic name[0m[0m
+[0m[[0minfo[0m] [0m[32m  - which can have default values[0m[0m
+[0m[[0minfo[0m] [0m[32m  - which can be private[0m[0m
+[0m[[0minfo[0m] [0m[32m    are brought into scope with import[0m[0m
+[0m[[0minfo[0m] [0m[32m    - for a single member[0m[0m
+[0m[[0minfo[0m] [0m[32m    - for multiple members from a single package[0m[0m
+[0m[[0minfo[0m] [0m[32m    - which can rename member[0m[0m
+[0m[[0minfo[0m] [0m[32m    - for all the members in a package[0m[0m
+[0m[[0minfo[0m] [0m[32m    - which can also bring instnce members into scope[0m[0m
+[0m[[0minfo[0m] [0m[32mScala singelton objects[0m[0m
+[0m[[0minfo[0m] [0m[32m- are defined with the object keyword[0m[0m
+[0m[[0minfo[0m] [0m[32m- can contain methods and fields[0m[0m
+[0m[[0minfo[0m] [0m[32m- include Predef, whose members are automatically imported[0m[0m

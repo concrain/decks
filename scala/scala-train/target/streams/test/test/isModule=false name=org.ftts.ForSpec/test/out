@@ -1,0 +1,9 @@
+[0m[[0minfo[0m] [0m[32mForSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mFor loops[0m[0m
+[0m[[0minfo[0m] [0m[32m- are of the form for (elem <- coll) expr[0m[0m
+[0m[[0minfo[0m] [0m[32m  For expressions[0m[0m
+[0m[[0minfo[0m] [0m[32m  - are similar to the for loop, but a yield keyword is added before [0m[0m
+[0m[[0minfo[0m] [0m[32m  - can have multiple generators[0m[0m
+[0m[[0minfo[0m] [0m[32m  - can have filters[0m[0m
+[0m[[0minfo[0m] [0m[32m  - can have definitions[0m[0m
+[0m[[0minfo[0m] [0m[32m  - are translated to calls to map, flatmap, and filter[0m[0m

@@ -1,0 +1,24 @@
+[0m[[0mdebug[0m] [0mRunning TaskDef(org.ftts.PatternSpec, org.scalatest.tools.Framework$$anon$1@2f0849da, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(org.ftts.TrySpec, org.scalatest.tools.Framework$$anon$1@2f0849da, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(org.ftts.OptionSpec, org.scalatest.tools.Framework$$anon$1@2f0849da, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.typesafe.training.scalatrain.TrainSpec, org.scalatest.tools.Framework$$anon$1@2f0849da, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.typesafe.training.scalatrain.TimeSpec, org.scalatest.tools.Framework$$anon$1@2f0849da, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(org.ftts.ScalaSpec, org.scalatest.tools.Framework$$anon$1@2f0849da, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(org.ftts.ForSpec, org.scalatest.tools.Framework$$anon$1@2f0849da, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(org.ftts.ClassSpec, org.scalatest.tools.Framework$$anon$1@2f0849da, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.typesafe.training.scalatrain.JourneyPlannerSpec, org.scalatest.tools.Framework$$anon$1@2f0849da, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 1 second, 215 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 59[0m[0m
+[0m[[0minfo[0m] [0m[36mSuites: completed 9, aborted 0[0m[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 59, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0minfo[0m] [0m[32mAll tests passed.[0m[0m
+[0m[[0mdebug[0m] [0mPassed tests:[0m
+[0m[[0mdebug[0m] [0m	com.typesafe.training.scalatrain.TrainSpec[0m
+[0m[[0mdebug[0m] [0m	com.typesafe.training.scalatrain.TimeSpec[0m
+[0m[[0mdebug[0m] [0m	org.ftts.ClassSpec[0m
+[0m[[0mdebug[0m] [0m	org.ftts.ForSpec[0m
+[0m[[0mdebug[0m] [0m	com.typesafe.training.scalatrain.JourneyPlannerSpec[0m
+[0m[[0mdebug[0m] [0m	org.ftts.ScalaSpec[0m
+[0m[[0mdebug[0m] [0m	org.ftts.OptionSpec[0m
+[0m[[0mdebug[0m] [0m	org.ftts.TrySpec[0m
+[0m[[0mdebug[0m] [0m	org.ftts.PatternSpec[0m

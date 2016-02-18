@@ -1,0 +1,10 @@
+[0m[[0minfo[0m] [0m[32mJourneyPlannerSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mstations[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be initialized correctly[0m[0m
+[0m[[0minfo[0m] [0m[32mCalling trainsAt[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return the correct trains[0m[0m
+[0m[[0minfo[0m] [0m[32mCalling stopsAt[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return the correct stops[0m[0m
+[0m[[0minfo[0m] [0m[32mCalling isShortTrip[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return false for more than one station in between[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return true for zero or one stations in between[0m[0m

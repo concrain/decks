@@ -1,0 +1,15 @@
+[0m[[0minfo[0m] [0m[32mPatternSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mScala pattern matching[0m[0m
+[0m[[0minfo[0m] [0m[32m  can be applied in a match expression[0m[0m
+[0m[[0minfo[0m] [0m[32m  - using the widlcard pattern[0m[0m
+[0m[[0minfo[0m] [0m[32m  - using the variable pattern[0m[0m
+[0m[[0minfo[0m] [0m[32m  - using the variable pattern with a type annotation[0m[0m
+[0m[[0minfo[0m] [0m[32m  - using the constant pattern[0m[0m
+[0m[[0minfo[0m] [0m[32m- using the constructor pattern[0m[0m
+[0m[[0minfo[0m] [0m[32m- can use constructor pattern with tuples[0m[0m
+[0m[[0minfo[0m] [0m[32m- can use constructor pattern with collections[0m[0m
+[0m[[0minfo[0m] [0m[32m  can be applied in variable assignment[0m[0m
+[0m[[0minfo[0m] [0m[32m  - to extract tuples values[0m[0m
+[0m[[0minfo[0m] [0m[32m  - but watch out for trouble[0m[0m
+[0m[[0minfo[0m] [0m[32m- can be used in generators to extract tuple values[0m[0m
+[0m[[0minfo[0m] [0m[32m- applies anytime a PartialFunction[T, U] is expected[0m[0m

@@ -1,0 +1,11 @@
+#Successful Tests
+#Sun Mar 22 13:14:25 PDT 2015
+com.typesafe.training.scalatrain.TimeSpec=1427055265065
+org.ftts.OptionSpec=1427055265023
+org.ftts.ScalaSpec=1427055265026
+org.ftts.TrySpec=1427055264997
+org.ftts.ForSpec=1427055265091
+org.ftts.PatternSpec=1427055265022
+org.ftts.ClassSpec=1427055265109
+com.typesafe.training.scalatrain.TrainSpec=1427055265021
+com.typesafe.training.scalatrain.JourneyPlannerSpec=1427055265070

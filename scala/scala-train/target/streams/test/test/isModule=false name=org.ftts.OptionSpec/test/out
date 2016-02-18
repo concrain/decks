@@ -1,0 +1,7 @@
+[0m[[0minfo[0m] [0m[32mOptionSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mScala Option[0m[0m
+[0m[[0minfo[0m] [0m[32m- represents a value that does not have to be provided (optional)[0m[0m
+[0m[[0minfo[0m] [0m[32m- can be used to handle null[0m[0m
+[0m[[0minfo[0m] [0m[32m- has many HOFs sen in collections[0m[0m
+[0m[[0minfo[0m] [0m[32m- can be used in a for expression[0m[0m
+[0m[[0minfo[0m] [0m[32m- can be pattern matched[0m[0m

@@ -1,0 +1,62 @@
+test
+console
+activator
+test
+compile
+:javap
+activator
+:javap
+test
+:q
+d
+test
+~ test
+class Promote(val hours: Int, val minutes: Int) {
+  //TODO: verify that hours is within 0 23
+  //TODO: verify that minutes is within 0 59
+  def asMinutes: Int = hours*60 + minutes
+  def minus: Int = hours*60 - minutes
+}class Promote(val hours: Int, val minutes: Int) {
+  //TODO: verify that hours is within 0 23
+  //TODO: verify that minutes is within 0 59
+  val asMinutes: Int = hours*60 + minutes
+  def minus(that: time): Int = asMinutes - that.asMinutes 
+}
+test
+:q
+test
+console
+activator
+koan next
+reload
+:next
+koan next
+class Station(name: String, schedule: Seq) {
+}class Station(name: String, schedule: Seq) {
+}test
+test
+koan next
+test
+koan 
+koan show
+koan next
+test
+koan next
+test
+koan next
+koan previous
+activator
+koan previous
+koan show
+koan last
+koan prev
+test
+koan next
+test
+koan next
+test
+clear
+test
+koan next
+koan prev
+test

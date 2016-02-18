@@ -1,0 +1,5 @@
+[0m[[0minfo[0m] [0m[32mTrainSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mCreating a Train[0m[0m
+[0m[[0minfo[0m] [0m[32m- should throw an IllegalArgumentException for a schedule with 0 or 1 elements[0m[0m
+[0m[[0minfo[0m] [0m[32mstations[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be initialized correctly[0m[0m

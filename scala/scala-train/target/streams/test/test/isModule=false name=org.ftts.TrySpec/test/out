@@ -1,0 +1,6 @@
+[0m[[0minfo[0m] [0m[32mTrySpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mScala supports try-catch blocks much like Java[0m[0m
+[0m[[0minfo[0m] [0m[32m- but the catch block is a pattern match (PartialFunction)[0m[0m
+[0m[[0minfo[0m] [0m[32mScala Try[0m[0m
+[0m[[0minfo[0m] [0m[32m- wraps operations that could fail with an exception[0m[0m
+[0m[[0minfo[0m] [0m[32m- can bre used in pattern matching[0m[0m

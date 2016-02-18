@@ -1,0 +1,14 @@
+[0m[[0minfo[0m] [0m[32mTimeSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mCreating a Time[0m[0m
+[0m[[0minfo[0m] [0m[32m- should throw an IllegalArgumentException for hours not within 0 and 23[0m[0m
+[0m[[0minfo[0m] [0m[32m- should throw an IllegalArgumentException for minutes not within 0 and 59[0m[0m
+[0m[[0minfo[0m] [0m[32mThe default arguments for hours and minutes[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be equal to 0[0m[0m
+[0m[[0minfo[0m] [0m[32masMinutes[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be initialized correctly[0m[0m
+[0m[[0minfo[0m] [0m[32mCalling minus or -[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return the correct difference in minutes[0m[0m
+[0m[[0minfo[0m] [0m[32mCalling toString[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return a properly formatted string representation[0m[0m
+[0m[[0minfo[0m] [0m[32mCalling Ordered operators[0m[0m
+[0m[[0minfo[0m] [0m[32m- should work as expected[0m[0m

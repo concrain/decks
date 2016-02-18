@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.typesafe.training"
+		module="scala-train_2.11"
+		revision="3.0.0"
+		conf="runtime-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20150320092216"/>
+	<dependencies>
+		<module organisation="com.typesafe.play" name="play-json_2.11">
+			<revision name="2.3.8" status="release" pubdate="20150212001321" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="2">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4384" time="0" location="/Users/russel/.ivy2/cache/com.typesafe.play/play-json_2.11/ivy-2.3.8.xml" searched="false" origin-is-local="false" origin-location="file:/usr/share/activator-1.3.2/repository/com.typesafe.play/play-json_2.11/2.3.8/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.training" name="scala-train_2.11" conf="optional, compile, runtime, runtime-internal" rev="2.3.8" rev-constraint-default="2.3.8" rev-constraint-dynamic="2.3.8" callerrev="3.0.0"/>
+				<artifacts>
+					<artifact name="play-json_2.11" type="jar" ext="jar" status="no" details="" size="630454" time="0" location="/Users/russel/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.8.jar">
+						<origin-location is-local="false" location="file:/usr/share/activator-1.3.2/repository/com.typesafe.play/play-json_2.11/2.3.8/jars/play-json_2.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.11.1" status="release" pubdate="20140520040246" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.1/" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="13">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2627" time="0" location="/Users/russel/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.11.1.xml" searched="false" origin-is-local="false" origin-location="file:/usr/share/activator-1.3.2/repository/org.scala-lang/scala-reflect/2.11.1/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="2.3.8"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="4372892" time="0" location="/usr/share/activator-1.3.2/repository/org.scala-lang/scala-reflect/2.11.1/jars/scala-reflect.jar">
+						<origin-location is-local="true" location="/usr/share/activator-1.3.2/repository/org.scala-lang/scala-reflect/2.11.1/jars/scala-reflect.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.3.2" status="release" pubdate="20140301221312" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="12">
+				<metadata-artifact status="no" details="" size="7213" time="0" location="/Users/russel/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.3.2.xml" searched="false" origin-is-local="false" origin-location="file:/usr/share/activator-1.3.2/repository/com.fasterxml.jackson.core/jackson-databind/2.3.2/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="2.3.8"/>
+				<artifacts>
+					<artifact name="jackson-databind" type="bundle" ext="jar" status="no" details="" size="915096" time="0" location="/Users/russel/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar">
+						<origin-location is-local="false" location="file:/usr/share/activator-1.3.2/repository/com.fasterxml.jackson.core/jackson-databind/2.3.2/bundles/jackson-databind.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.3.2" status="release" pubdate="20140228203828" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master(compile), master" position="11">
+				<metadata-artifact status="no" details="" size="5463" time="0" location="/Users/russel/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.3.2.xml" searched="false" origin-is-local="false" origin-location="file:/usr/share/activator-1.3.2/repository/com.fasterxml.jackson.core/jackson-core/2.3.2/ivys/ivy.xml"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="2.3.2"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="2.3.8"/>
+				<artifacts>
+					<artifact name="jackson-core" type="bundle" ext="jar" status="no" details="" size="199553" time="0" location="/Users/russel/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar">
+						<origin-location is-local="false" location="file:/usr/share/activator-1.3.2/repository/com.fasterxml.jackson.core/jackson-core/2.3.2/bundles/jackson-core.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.3.2" status="release" pubdate="20140228203539" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master, master(*)" position="10">
+				<metadata-artifact status="no" details="" size="4849" time="0" location="/Users/russel/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.3.2.xml" searched="false" origin-is-local="false" origin-location="file:/usr/share/activator-1.3.2/repository/com.fasterxml.jackson.core/jackson-annotations/2.3.2/ivys/ivy.xml"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="2.3.2"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="2.3.8"/>
+				<artifacts>
+					<artifact name="jackson-annotations" type="bundle" ext="jar" status="no" details="" size="36521" time="0" location="/Users/russel/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar">
+						<origin-location is-local="false" location="file:/usr/share/activator-1.3.2/repository/com.fasterxml.jackson.core/jackson-annotations/2.3.2/bundles/jackson-annotations.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.3.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="-1">
+				<evicted-by rev="2.3.2"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="2.3.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.joda" name="joda-convert">
+			<revision name="1.6" status="release" pubdate="20140127133743" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-convert/" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="9">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6105" time="0" location="/Users/russel/.ivy2/cache/org.joda/joda-convert/ivy-1.6.xml" searched="false" origin-is-local="false" origin-location="file:/usr/share/activator-1.3.2/repository/org.joda/joda-convert/1.6/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="2.3.8"/>
+				<artifacts>
+					<artifact name="joda-convert" type="jar" ext="jar" status="no" details="" size="98818" time="0" location="/Users/russel/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar">
+						<origin-location is-local="false" location="file:/usr/share/activator-1.3.2/repository/org.joda/joda-convert/1.6/jars/joda-convert.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.3" status="release" pubdate="20130816133125" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-time/" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="8">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6353" time="0" location="/Users/russel/.ivy2/cache/joda-time/joda-time/ivy-2.3.xml" searched="false" origin-is-local="false" origin-location="file:/usr/share/activator-1.3.2/repository/joda-time/joda-time/2.3/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.3" rev-constraint-default="2.3" rev-constraint-dynamic="2.3" callerrev="2.3.8"/>
+				<artifacts>
+					<artifact name="joda-time" type="jar" ext="jar" status="no" details="" size="581571" time="0" location="/Users/russel/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar">
+						<origin-location is-local="false" location="file:/usr/share/activator-1.3.2/repository/joda-time/joda-time/2.3/jars/joda-time.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-datacommons_2.11">
+			<revision name="2.3.8" status="release" pubdate="20150212001324" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="7">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2534" time="0" location="/Users/russel/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/ivy-2.3.8.xml" searched="false" origin-is-local="false" origin-location="file:/usr/share/activator-1.3.2/repository/com.typesafe.play/play-datacommons_2.11/2.3.8/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.3.8" rev-constraint-default="2.3.8" rev-constraint-dynamic="2.3.8" callerrev="2.3.8"/>
+				<artifacts>
+					<artifact name="play-datacommons_2.11" type="jar" ext="jar" status="no" details="" size="5329" time="0" location="/Users/russel/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.8.jar">
+						<origin-location is-local="false" location="file:/usr/share/activator-1.3.2/repository/com.typesafe.play/play-datacommons_2.11/2.3.8/jars/play-datacommons_2.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-functional_2.11">
+			<revision name="2.3.8" status="release" pubdate="20150212001322" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="6">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2531" time="0" location="/Users/russel/.ivy2/cache/com.typesafe.play/play-functional_2.11/ivy-2.3.8.xml" searched="false" origin-is-local="false" origin-location="file:/usr/share/activator-1.3.2/repository/com.typesafe.play/play-functional_2.11/2.3.8/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.3.8" rev-constraint-default="2.3.8" rev-constraint-dynamic="2.3.8" callerrev="2.3.8"/>
+				<artifacts>
+					<artifact name="play-functional_2.11" type="jar" ext="jar" status="no" details="" size="373182" time="0" location="/Users/russel/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.8.jar">
+						<origin-location is-local="false" location="file:/usr/share/activator-1.3.2/repository/com.typesafe.play/play-functional_2.11/2.3.8/jars/play-functional_2.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-iteratees_2.11">
+			<revision name="2.3.8" status="release" pubdate="20150212001319" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="3">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3311" time="0" location="/Users/russel/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/ivy-2.3.8.xml" searched="false" origin-is-local="false" origin-location="file:/usr/share/activator-1.3.2/repository/com.typesafe.play/play-iteratees_2.11/2.3.8/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.3.8" rev-constraint-default="2.3.8" rev-constraint-dynamic="2.3.8" callerrev="2.3.8"/>
+				<artifacts>
+					<artifact name="play-iteratees_2.11" type="jar" ext="jar" status="no" details="" size="731026" time="0" location="/Users/russel/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.8.jar">
+						<origin-location is-local="false" location="file:/usr/share/activator-1.3.2/repository/com.typesafe.play/play-iteratees_2.11/2.3.8/jars/play-iteratees_2.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.2.1" status="release" pubdate="20140502105416" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="5">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2723" time="0" location="/Users/russel/.ivy2/cache/com.typesafe/config/ivy-1.2.1.xml" searched="false" origin-is-local="false" origin-location="file:/usr/share/activator-1.3.2/repository/com.typesafe/config/1.2.1/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.play" name="play-iteratees_2.11" conf="compile, runtime" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="2.3.8"/>
+				<artifacts>
+					<artifact name="config" type="bundle" ext="jar" status="no" details="" size="219554" time="0" location="/Users/russel/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar">
+						<origin-location is-local="false" location="file:/usr/share/activator-1.3.2/repository/com.typesafe/config/1.2.1/bundles/config.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-stm" name="scala-stm_2.11">
+			<revision name="0.7" status="release" pubdate="20140418004442" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://nbronson.github.com/scala-stm/" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="4">
+				<license name="BSD" url="https://github.com/nbronson/scala-stm/blob/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="2520" time="0" location="/Users/russel/.ivy2/cache/org.scala-stm/scala-stm_2.11/ivy-0.7.xml" searched="false" origin-is-local="false" origin-location="file:/usr/share/activator-1.3.2/repository/org.scala-stm/scala-stm_2.11/0.7/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.play" name="play-iteratees_2.11" conf="compile, runtime" rev="0.7" rev-constraint-default="0.7" rev-constraint-dynamic="0.7" callerrev="2.3.8"/>
+				<artifacts>
+					<artifact name="scala-stm_2.11" type="jar" ext="jar" status="no" details="" size="630306" time="0" location="/Users/russel/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar">
+						<origin-location is-local="false" location="file:/usr/share/activator-1.3.2/repository/org.scala-stm/scala-stm_2.11/0.7/jars/scala-stm_2.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11">
+			<revision name="1.0.3" status="release" pubdate="20141214192104" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2792" time="0" location="/Users/russel/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/ivy-1.0.3.xml" searched="false" origin-is-local="false" origin-location="file:/usr/share/activator-1.3.2/repository/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.3/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.training" name="scala-train_2.11" conf="optional, compile, runtime, runtime-internal" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="3.0.0"/>
+				<artifacts>
+					<artifact name="scala-parser-combinators_2.11" type="bundle" ext="jar" status="no" details="" size="415523" time="0" location="/Users/russel/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.3.jar">
+						<origin-location is-local="false" location="file:/usr/share/activator-1.3.2/repository/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.3/bundles/scala-parser-combinators_2.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.6" status="release" pubdate="20150225170105" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.6/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master, compile(*), runtime(*), master(compile), master(*)" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/Users/russel/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.6/scala-library-2.11.6.pom"/>
+				<caller organisation="com.typesafe.play" name="play-datacommons_2.11" conf="compile, runtime" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="2.3.8"/>
+				<caller organisation="com.typesafe.play" name="play-functional_2.11" conf="compile, runtime" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="2.3.8"/>
+				<caller organisation="com.typesafe.play" name="play-iteratees_2.11" conf="compile, runtime" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="2.3.8"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="2.3.8"/>
+				<caller organisation="org.scala-stm" name="scala-stm_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="0.7"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="2.11.1"/>
+				<caller organisation="com.typesafe.training" name="scala-train_2.11" conf="optional, compile, runtime, runtime-internal" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="3.0.0"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11" conf="default, compile, runtime, master" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="1.0.3"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5564007" time="0" location="/Users/russel/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.6/scala-library-2.11.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.11.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, master(*), runtime, compile(*), runtime(*)" position="-1">
+				<evicted-by rev="2.11.6"/>
+				<caller organisation="org.scala-stm" name="scala-stm_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="0.7"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.11.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, master(*), runtime, compile(*), runtime(*), master(compile), master" position="-1">
+				<evicted-by rev="2.11.6"/>
+				<caller organisation="com.typesafe.play" name="play-datacommons_2.11" conf="compile, runtime" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="2.3.8"/>
+				<caller organisation="com.typesafe.play" name="play-functional_2.11" conf="compile, runtime" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="2.3.8"/>
+				<caller organisation="com.typesafe.play" name="play-iteratees_2.11" conf="compile, runtime" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="2.3.8"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="2.3.8"/>
+				<caller organisation="org.scala-stm" name="scala-stm_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="0.7"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="2.11.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.11.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="-1">
+				<evicted-by rev="2.11.6"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11" conf="default, compile, runtime, master" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="1.0.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
