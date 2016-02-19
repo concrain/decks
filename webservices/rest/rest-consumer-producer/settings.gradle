@@ -1,0 +1,3 @@
+
+rootProject.name = 'multi-build'
+include 'rest-consumer', 'rest-service'

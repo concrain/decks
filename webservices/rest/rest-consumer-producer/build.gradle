@@ -1,0 +1,5 @@
+/** multi-build */
+
+allprojects {
+    task listProjects << { task -> println " subbuild: $task.project.name" }
+}

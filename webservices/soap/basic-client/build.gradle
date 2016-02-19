@@ -1,0 +1,49 @@
+buildscript {
+    ext {
+        //springBootVersion = '1.2.5.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+      //classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.5.RELEASE")
+    }
+}
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+apply plugin: 'idea'
+//apply plugin: 'spring-boot'
+apply plugin: 'application'
+
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  //compile("org.springframework.boot:spring-boot-starter")
+  compile 'org.codehaus.groovy:groovy:2.4.3'
+}
+
+sourceSets {                                                
+  main.groovy.srcDir('src/main/groovy')
+  test.groovy.srcDir('src/test/groovy')
+}
+
+mainClassName = "ipLocation.IPLocationFinder"
+
+run {
+  systemProperties = System.getProperties()
+
+  // http://stackoverflow.com/questions/23689054/problems-passing-system-properties-and-parameters-when-running-java-class-via-gr
+  // gradle run -Dmyvariable=myvalue -Dexec.args="212.58.244.20"
+}
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.5'
+}
+
+
+
+
