@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+version = '1.0'
+
+sourceSets {
+	main.java.srcDir("src/main/java")	
+	test.java.srcDir("src/test/java")
+}
+
+jar {
+	baseName = 'strategy-pattern'
+	version = '1.0'
+	manifest.attributes("Main-Class":"com.app.StrategyDemo")
+}
+
+task run (group: 'run app', type: JavaExec, dependsOn: classes, description: 'run application from compiled classes') {
+	main = 'com.app.StrategyDemo'
+	classpath = sourceSets.main.runtimeClasspath
+}

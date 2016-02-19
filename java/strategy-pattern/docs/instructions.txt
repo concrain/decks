@@ -1,0 +1,15 @@
+The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable.
+Strategy lets the algorithm vary independently from clients that use it.
+
+Design principles for using the Strategy pattern
+
+1) "Encapsulate what Varies" 
+   Look for code that varies and separate it; then encapsulate it.
+
+2) "Replace IS-A with HAS-A"  
+   Program to an interface, not an implementation.
+
+   Use compsoition for behaviors that vary.			 "HAS-A"	
+   Use inheritance for behaviors that don't change.  "IS-A"
+
+3) Favor composition over inheritance.
