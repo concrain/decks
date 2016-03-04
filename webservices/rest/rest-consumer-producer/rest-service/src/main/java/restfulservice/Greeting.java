@@ -22,10 +22,10 @@ public class Greeting {
     }
 
     public void setId(long id) {
-      this.id = id;
+        this.id = id;
     }
 
     public void setContent(String content) {
-      this.content = content;
+        this.content = content;
     }
 }
