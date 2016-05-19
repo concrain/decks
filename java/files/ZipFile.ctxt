@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ZipFile()
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=zipFile
+comment2.target=void\ zipIt(java.lang.String)
+comment3.params=node
+comment3.target=void\ generateFileList(java.io.File)
+comment4.params=file
+comment4.target=java.lang.String\ generateZipEntry(java.lang.String)
+numComments=5

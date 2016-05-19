@@ -21,3 +21,7 @@ public class MyType<T> {
 MyType<String> stringType = new MyType<>("Hello");
 stringType.setValue("World");
 printf("My generic class type is %s, with a value of '%s'", stringType.describe(), stringType.getValue());
+
+MyType<Integer> integerType = new MyType<>();
+integerType.setValue(12.34);
+printf("\nMy generic class type is %s, with a value of '%s'", integerType.describe(), integerType.getValue());

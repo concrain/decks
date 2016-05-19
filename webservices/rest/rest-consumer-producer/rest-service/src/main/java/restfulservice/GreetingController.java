@@ -3,6 +3,11 @@ package restfulservice;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -21,6 +26,7 @@ public class GreetingController {
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
 
+    // http://localhost:8080/greeting?name=User
     @RequestMapping("/greeting")
     public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
 
@@ -37,20 +43,42 @@ public class GreetingController {
       /** */
     }
 	
-	//  http://localhost:9001/queryTest/insert;k=first_name;v=Russel
-	@RequestMapping(value = "queryTest/{table}", produces = "text/plain")
-	public String queryTest(@PathVariable String table,
-	                      @MatrixVariable Optional<String> k,
-	                      @MatrixVariable Optional<String> v) {
+	// http://localhost:9001/queryTest/table=logger;query=insert;key=uuid;keyValue=12;name=first_name,last_name;nameTest=R,A;value=Russel,Arthur
+	@RequestMapping(value = "queryTest/{str}", produces = "text/plain")
+	public String queryTest(@PathVariable String str,
+						  @MatrixVariable String table,
+						  @MatrixVariable String query,
+					      @MatrixVariable String key,
+					      @MatrixVariable String keyValue,
+	                      @MatrixVariable String[] name,
+	                      @MatrixVariable String[] nameTest,
+	                      @MatrixVariable String[] value) {
 
-	    StringBuilder result = new StringBuilder();
-	    result.append("table: " + table);
-	    result.append("key: ");
-	    k.ifPresent(value -> result.append(value));
-	    result.append(", value: ");
-	    v.ifPresent(value -> result.append(value));
-	    
+//	    StringBuilder result = new StringBuilder();
+//	    result.append("table: " + table);
+//	    result.append("key: ");
+//	    k.ifPresent(value -> result.append(value));
+//	    result.append(", value: ");
+//	    v.ifPresent(value -> result.append(value));
+
+		List<String> columnNames = new ArrayList<String>();
+		List<String> columnNamesTest = new ArrayList<String>();
+		List<String> columnValues = new ArrayList<String>();
+		for (String n : name) { columnNames.add(n); }
+		for (String n : nameTest) { columnNamesTest.add(n); }
+		for (String v : value) { columnValues.add(v); }
+		
+		StringBuilder result = new StringBuilder();
+		result.append("tableName: " + table);
+		result.append(" queryType: " + query);
+		result.append(" primaryKey: " + key);
+		result.append(" primaryKeyValue: " + keyValue);
+		result.append(" columnNames: " + columnNames);
+		result.append(" columnNamesTest: " + columnNamesTest);
+		result.append(" columnValues: " + columnValues);
 	    log.info(result.toString());
+
+	    // tableName: logger queryType: insert primaryKey: uuid primaryKeyValue: 12 columnNames: [first_name, last_name] columnNamesTest: [R, A] columnValues: [Russel, Arthur]
 	    return result.toString();
 	}
 }

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=barrier1\ barrier2
+comment0.target=CyclicBarrierRunnable(java.util.concurrent.CyclicBarrier,\ java.util.concurrent.CyclicBarrier)
+comment1.params=
+comment1.target=void\ run()
+numComments=2
