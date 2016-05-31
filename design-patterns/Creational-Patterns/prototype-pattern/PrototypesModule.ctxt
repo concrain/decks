@@ -1,6 +1,8 @@
 #BlueJ class context
-comment0.params=obj
-comment0.target=void\ addPrototype(Prototype)
-comment1.params=name
-comment1.target=java.lang.Object\ findAndClone(java.lang.String)
-numComments=2
+comment0.params=count
+comment0.target=void\ setThreadCount(int)
+comment1.params=obj
+comment1.target=void\ addPrototype(Prototype)
+comment2.params=name
+comment2.target=java.lang.Object\ findAndClone(java.lang.String)
+numComments=3

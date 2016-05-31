@@ -1,5 +1,4 @@
 
-
 interface Prototype {
     
   Object clone();

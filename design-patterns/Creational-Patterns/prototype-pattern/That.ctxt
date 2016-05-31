@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.params=
-comment0.target=java.lang.Object\ clone()
-comment1.params=
-comment1.target=java.lang.String\ getName()
-comment2.params=
-comment2.target=void\ execute()
-numComments=3
